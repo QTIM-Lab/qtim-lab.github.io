@@ -191,16 +191,19 @@ img {
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 600;
-  font-size: 100px;
+  font-size: 800px;
   letter-spacing: 1px;
   border-bottom: 1px solid $lightGray;
-  padding: 20px 0;
+
+  @include mobile {
+    font-size: 80px;
+  }
 }
 
 .site-description {
   color: $gray;
   font-size: 16px;
-
+  margin: 0px;
   border-bottom: 1px solid $lightGray;
   padding: 20px 0;
 
