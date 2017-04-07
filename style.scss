@@ -217,6 +217,7 @@ nav {
   font-size: 18px;
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
+  line-height: 3em;
 
   @include mobile {
     margin-top: 9px;
