@@ -30,12 +30,21 @@ body {
   width: 100%;
 }
 
+.wideview {
+
+  display: inherit;
+
+  @include smallview {
+    /*display: none;*/
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
 
-  line-height: 1.7;
+  line-height: 1.4;
   margin: 1em 0 15px;
   padding: 0;
 
@@ -150,6 +159,11 @@ img {
   display: block;
   text-align: center;
   width: $maxWidth;
+
+  @include smallview {
+    height: 140px;
+    width: 480px;
+  }
 }
 
 .ch-grid:after,
@@ -163,10 +177,16 @@ img {
 }
 
 .ch-grid li {
-  width: $buttonHeight;
-  height: $buttonHeight;
+  width: 220px;
+  height: 220px;
   display: inline-block;
   margin: 0 20px;
+
+  @include smallview {
+    margin: 0 5px;
+    width: 140px;
+    height: 140px;    
+  }
 }
 
 .ch-item {
@@ -181,6 +201,13 @@ img {
     inset 0 0 0 10px rgba(0,0,0,1),
     0 1px 2px rgba(0,0,0,0.1);
   transition: all 0.4s ease-in-out;
+
+  @include smallview {
+  box-shadow: 
+    inset 0 0 0 5px rgba(0,0,0,1),
+    0 1px 2px rgba(0,0,0,0.1);
+  }
+
 }
 
 .ch-img-1 { 
@@ -192,7 +219,7 @@ img {
 }
 
 .ch-img-3 { 
-  background-image: url(./images/Feautre_Image_3.jpg);
+  background-image: url(./images/Feature_Image_3.jpg);
 }
 
 .ch-info {
@@ -208,6 +235,12 @@ img {
   opacity: 0;
   transition: all 0.4s ease-in-out;
   transform: scale(0);
+
+  @include smallview {
+  box-shadow: 
+    inset 0 0 0 5px rgba(0,0,0,1),
+    0 1px 2px rgba(0,0,0,0.1);
+  }
 }
 
 
@@ -223,6 +256,12 @@ img {
   text-shadow: 
     0 0 1px #fff, 
     0 1px 2px rgba(0,0,0,0.3);
+  @include smallview {
+  height: 85px;
+  font-size: 14px;
+  margin: 0 10px;
+  padding: 35px 0 0 0;
+  }
 }
 
 .ch-info p {
@@ -234,6 +273,18 @@ img {
   border-top: 1px solid rgba(255,255,255,0.5);
   opacity: 0;
   transition: all 1s ease-in-out 0.4s;
+  @include smallview {
+  font-size: 10px;
+  margin: 0 20%;
+  padding: 5px 0 0 0;
+  width: 60%;
+  }
+}
+
+.extra-text {
+    @include smallview {
+  display: none;
+}
 }
 
 .ch-info p a {
@@ -246,6 +297,11 @@ img {
   letter-spacing: 1px;
   padding-top: 4px;
   font-family: 'Open Sans', Arial, sans-serif;
+    @include smallview {
+  font-size: 10px;
+  margin: 0 10px;
+  padding: 5px 0 0 0;
+  }
 }
 
 .ch-info p a:hover {
