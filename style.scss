@@ -340,6 +340,48 @@ img {
 /*********************/
 
 //
+// .bio
+//
+
+.bio {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 40px auto;
+
+}
+
+.bio img {
+  width: 100%;
+  height: auto;
+}
+
+.bio h1 {
+  margin: 16px 20px;
+  font-weight: 300;  
+  text-align: center;
+}
+
+.bio h2 {
+  color: $gray;
+  font-size: 16px;
+  padding: 16px 20px;
+  border-top: 1px solid $lightGray;
+  border-bottom: 1px solid $lightGray;
+  text-align: center;
+}
+
+.bio p {
+  font-size: 14px;
+  margin-bottom: 0px;
+
+    @include mobile {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+//
 // .masthead
 //
 
