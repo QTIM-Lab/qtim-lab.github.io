@@ -42,6 +42,18 @@ body {
   }
 }
 
+.mobile-hide {
+    @include mobile {
+  display: none !important;
+}
+}
+
+.small-hide {
+    @include smallview {
+  display: none !important;
+}
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
@@ -284,12 +296,6 @@ img {
   }
 }
 
-.mobile-hide {
-    @include smallview {
-  display: none;
-}
-}
-
 .ch-info p a {
   display: block;
   color: rgba(255,255,255,0.7);
@@ -326,13 +332,15 @@ img {
   opacity: 1;
 }
 
+//
+// Front-Page Lines
+//
+
 .weights {
   height: $weightHeight;
 }
 
 .weight-line {
-  y1: 0;
-  y2: $weightHeight;
 }
 
 /*********************/
@@ -348,13 +356,24 @@ img {
   max-width: 500px;
   display: block;
   margin: 40px auto;
+}
 
+.bio-directory {
+
+  width: 100%;
+
+  @include smallview {
+    width: 90%;
+    margin: 0px 5%;
+  }
 }
 
 .bio img {
   width: 100%;
   height: auto;
 }
+
+
 
 .bio h1 {
   margin: 16px 20px;
