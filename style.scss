@@ -26,7 +26,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: $maxWidth;
-  padding: 0 10px;
+  padding: 0 0px;
   width: 100%;
     @include smallview {
     padding: 0px;
@@ -52,6 +52,24 @@ body {
     @include smallview {
   display: none !important;
 }
+}
+
+.small-only {
+  display: none;
+
+  @include smallview-only {
+  display: inherit !important;
+}
+
+}
+
+.mobile-only {
+  display: none;
+
+  @include mobile {
+  display: inherit !important;
+}
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -173,12 +191,20 @@ img {
   list-style: none;
   display: block;
   text-align: center;
-  width: $maxWidth;
+  width: 100%;
 
   @include smallview {
     height: 140px;
     width: 480px;
+    margin: 0 auto;
   }
+
+  @include mobile {
+    height: 140px;
+    width: 320px;
+    margin: 0 auto;
+  }
+
 }
 
 .ch-grid:after,
@@ -202,6 +228,13 @@ img {
     width: 140px;
     height: 140px;    
   }
+
+  @include mobile {
+    margin: 0 5px;
+    width: 140px;
+    height: 140px;    
+  }
+
 }
 
 .ch-item {
@@ -223,18 +256,52 @@ img {
     0 1px 2px rgba(0,0,0,0.1);
   }
 
+  @include mobile {
+  box-shadow: 
+    inset 0 0 0 5px rgba(0,0,0,1),
+    0 1px 2px rgba(0,0,0,0.1);
+  }
+
+
 }
 
 .ch-img-1 { 
   background-image: url(./images/Feature_Image_1.jpg);
+
+  @include smallview {
+  background-image: url(./images/Feature_Image_1_Small.jpg);
+  }
+
+  @include mobile {
+  background-image: url(./images/Feature_Image_1_Small.jpg);
+  }
+
 }
 
 .ch-img-2 { 
   background-image: url(./images/Feature_Image_2.jpeg);
+
+ @include smallview {
+  background-image: url(./images/Feature_Image_2_Small.jpeg);  
+ }
+
+ @include mobile {
+  background-image: url(./images/Feature_Image_2_Small.jpeg);  
+ }
+
 }
 
 .ch-img-3 { 
   background-image: url(./images/Feature_Image_3.jpg);
+
+ @include smallview {
+  background-image: url(./images/Feature_Image_3_Small.jpg);  
+ }
+
+ @include mobile {
+  background-image: url(./images/Feature_Image_3_Small.jpg);  
+ }
+
 }
 
 .ch-info {
@@ -256,6 +323,14 @@ img {
     inset 0 0 0 5px rgba(0,0,0,1),
     0 1px 2px rgba(0,0,0,0.1);
   }
+
+  @include mobile {
+  box-shadow: 
+    inset 0 0 0 5px rgba(0,0,0,1),
+    0 1px 2px rgba(0,0,0,0.1);
+  }
+
+
 }
 
 
@@ -271,12 +346,21 @@ img {
   text-shadow: 
     0 0 1px #fff, 
     0 1px 2px rgba(0,0,0,0.3);
+
   @include smallview {
   height: 85px;
   font-size: 14px;
   margin: 0 10px;
   padding: 35px 0 0 0;
   }
+
+  @include mobile {
+  height: 85px;
+  font-size: 14px;
+  margin: 0 10px;
+  padding: 35px 0 0 0;
+  }
+
 }
 
 .ch-info p {
@@ -288,12 +372,21 @@ img {
   border-top: 1px solid rgba(255,255,255,0.5);
   opacity: 0;
   transition: all 1s ease-in-out 0.4s;
+
   @include smallview {
   font-size: 10px;
-  margin: 0 20%;
-  padding: 5px 0 0 0;
+  margin: 12px 20%;
+  padding: 3px 0 0 0;
   width: 60%;
   }
+
+  @include mobile {
+  font-size: 10px;
+  margin: 12px 20%;
+  padding: 3px 0 0 0;
+  width: 60%;
+  }
+
 }
 
 .ch-info p a {
@@ -302,15 +395,23 @@ img {
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: 1px;
   padding-top: 4px;
   font-family: 'Open Sans', Arial, sans-serif;
-    @include smallview {
-  font-size: 10px;
-  margin: 0 10px;
+  
+  @include smallview {
+  font-size: 9px;
+  margin: 0 0px;
   padding: 5px 0 0 0;
   }
+
+  @include mobile {
+  font-size: 9px;
+  margin: 0 0px;
+  padding: 5px 0 0 0;
+  }
+
 }
 
 .ch-info p a:hover {
@@ -338,6 +439,17 @@ img {
 
 .weights {
   height: $weightHeight;
+  width: 100%;
+
+  @include smallview {
+    width: 480px;
+    margin: 0 auto;
+  }
+
+  @include mobile {
+    width: 320px;
+    margin: 0 auto;
+  }
 }
 
 .weight-line {
@@ -455,6 +567,11 @@ img {
   @include mobile {
     font-size: 80px;
   }
+}
+
+.site-name a {
+  text-decoration: none;
+  color: $darkGray;
 }
 
 .site-description {
