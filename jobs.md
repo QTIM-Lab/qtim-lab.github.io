@@ -4,12 +4,4 @@ title: Jobs
 permalink: /jobs/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+We do not have any opening at this time. Feel free to get in touch at qtim.lab@gmail.com if you are interested in working with us, and we will keep you posted of any new positions that may pop up!

@@ -4,12 +4,15 @@ title: Research
 permalink: /research/
 ---
 
-Some information about you!
+<div class="research-topic">
 
-### More Information
+<div class="research-bubble" style="background-image: url(../images/Feature_Image_1.jpg);">
+  <div class="ch-info">
+    <h3>Research Topic 1</h3>
+    <p><a href="http://drbl.in/eOPF">Read More...</a></p>
+  </div>
+</div>
 
-A place to include any other types of information that you'd like to include about yourself.
+Coming soon!
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+</div>
