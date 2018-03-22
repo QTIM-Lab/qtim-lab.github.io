@@ -4,37 +4,99 @@ title: Research
 permalink: /research/
 ---
 
-<div class="research-topic">
+<div class="research-topic" id="brain_les">
 
 <div class="research-bubble-wrapper">
-<div class="research-bubble" style="background-image: url(../images/Feature_Image_1.jpg);"></div>
+<div class="research-bubble" style="background-image: url(../images/research/brainseg.png);"></div>
 </div>
 
 <div class="research-text">
-<h2>Brain Tumor Segmentation</h2>
-Using both public datasets and private datasets derived from collaborators and our own clinical trials, we use deep learning to perform automatic tumor segmentation in the case of glioblastoma and tumor metastases. We focus on turning our methods into open-source and publically-usable via Docker-enabled Python packages. <br /><br />
-Project Links: <a href="mailto:kalpathy@nmr.mgh.harvard.edu">DeepNeuro</a> &#9679; <a href=https://www.linkedin.com/in/jayashree-kalpathy-cramer-0ab6315/>qtim_bmSegmenter</a> &#9679; <a href=https://www.slicer.org/wiki/Documentation/Nightly/Extensions/SegmentationWizard>Segmentation Wizard (3D Slicer)</a> &#9679; <a href=https://www.nmr.mgh.harvard.edu/user/8165>Latest Publication</a>
+<h2>Brain Lesion Segmentation</h2>
+We are developing deep learning algorithms to perform lesion segmentation from multi-sequence MRI for various diseases including glioma, brain metastases, adrenoleukodystrophy and stroke.
+<br /><br />
+Project links: <a href="https://arxiv.org/abs/1709.02967" target="_blank">Latest publication</a> &#9679; <a href="https://github.com/QTIM-Lab/DeepNeuro" target="_blank">DeepNeuro</a>
+</div>
 </div>
 
-</div>
-
-
-<div class="research-topic">
-<div class="research-bubble" style="background-image: url(../images/Feature_Image_1.jpg);"></div>
-
+<div class="research-topic" id="idh">
+<div class="research-bubble" style="background-image: url(../images/research/idh.png);"></div>
 <div class="research-text">
 <h2>Radiogenomics</h2>
-We apply deep learning to MR imaging to non-invasively predict genomics in glioma, such as the presence of Isocitrate Dehydrogenase mutations. This non-invasive tool can serve as an alternative to invasive biopsy, guiding patient management at an earlier stage of disease and in follow-up.<br /><br />
-Project Links: <a href="https://github.com/QTIM-Lab/DeepNeuro">DeepNeuro</a> &#9679; <a href="https://github.com/QTIM-Lab/qtim_gbmSegmenter"/>qtim_bmSegmenter</a> &#9679; <a href=https://www.nmr.mgh.harvard.edu/user/8165>Segmentation Wizard (3D Slicer)</a> &#9679; <a href=https://www.nmr.mgh.harvard.edu/user/8165>Latest Publication</a>
+Identification of tumor mutation status can improve prognostication and guide patient management, but requires a highly invasive biopsy. We are developing a “virtual biopsy” technique based on deep learning that may be applied to multi-sequence MRI to accurately predict isocitrate dehydrogenase (IDH) mutations and 1p19q co-deletions in glioma. 
+<br /><br />
+Project links: <a href="http://clincancerres.aacrjournals.org/content/24/5/1073.long
+" target="_blank">Latest publication</a> &#9679; <a href="https://github.com/QTIM-Lab/IDH_Prediction
+" target="_blank"/>GitHub</a>
+</div>
+</div>
+
+<div class="research-topic" id="rop">
+<div class="research-bubble" style="background-image: url(../images/research/retina.bmp);"></div>
+<div class="research-text">
+<h2>Retinopathy of Prematurity</h2>
+Retinopathy of prematurity (ROP) is a disease that affects the retinal vasculature of preterm and low birthweight infants. We are developing algorithms for retinal vessel segmentation and automated diagnosis from fundus photographs based on deep learning, as well as risk models to predict treatment-requiring disease.
+<br /><br />
+Project links: <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10579/105790Q/Fully-automated-disease-severity-assessment-and-treatment-monitoring-in-retinopathy/10.1117/12.2295942.short?SSO=1 
+" target="_blank"/>Latest publication</a> &#9679; <a href="http://deeprop.eastus.cloudapp.azure.com:5000/" target="_blank">deeprop.io</a> 
+</div>
+</div>
+
+<div class="research-topic" id="software">
+<div class="research-bubble" style="background-image: url(../images/research/deepneuro_resized.png); background-size: 250px 250px;"></div>
+<div class="research-text">
+<h2>Open-Source Imaging Software</h2>
+ Our goal is to provide readily-usable software applications for the clinical and research community in neuroimaging. We develop software for 3D Slicer, an open-source analysis and visualization platform for medical images, and develop user-friendly Python packages for machine learning algorithms. Most recently, we are developing DeepNeuro, a deep learning neuroimaging package that uses Docker containers to ensure easy, repeatable implementation of neural network architectures.
+<br /><br />
+Project links: <a href="https://github.com/QTIM-Lab/DeepNeuro" target="_blank"/>DeepNeuro</a> &#9679; <a href="https://www.slicer.org/" target="_blank">3D Slicer</a> &#9679; <a href="https://github.com/QTIM-Lab/SlicerSegmentationWizard" target="_blank">Segmentation wizard (3D Slicer)</a> &#9679; <a href="https://github.com/QTIM-Lab/qtim_tools" target="_blank">QTIM Tools</a> 
+</div>
+</div>
+
+<div class="research-topic" id="distributed">
+<div class="research-bubble" style="background-image: url(../images/research/dist_learn.jpg);"></div>
+<div class="research-text">
+<h2>Distributed Learning</h2>
+Training deep neural networks typically requires centrally-hosted data, which presents challenges for multi-institutional collaborations both in terms of logistics and HIPAA compliance. We are developing a platform that allows distribution of neural network models that serves as an effective alternative to sharing patient data.
+<br /><br />
+Project links: <a href="https://arxiv.org/abs/1709.05929" target="_blank"/>Latest publication</a>
+</div>
+</div>
+
+<div class="research-topic" id="clinical">
+<div class="research-bubble" style="background-image: url(../images/research/clinical.png);"></div>
+<div class="research-text">
+<h2>Therapeutic Clinical Trials</h2>
+Using advanced MRI or PET acquisition and analysis approaches, we are focused on better understanding why (or why not) novel drugs are working in patients with primary or metastatic brain tumors. These noninvasive tools are critical to improving care for patients with these challenging diseases by understanding drug mechanism of action and the biological impact of new drugs on the tumor.
+<br /><br />
+Project links: <a href="http://scholar.harvard.edu/files/xda/files/j_neurooncol.pdf" target="_blank">Recent publication</a> &#9679; <a href="https://clinicaltrials.gov/ct2/show/NCT03139916" target="_blank"/>Clinical trial</a> 
+</div>
+</div>
+
+<div class="research-topic" id="dce">
+<div class="research-bubble" style="background-image: url(../images/research/dce.png);"></div>
+<div class="research-text">
+<h2>Dynamic MRI Analysis</h2>
+ We are developing novel methods for analyzing dynamic MRI, including dynamic susceptibility (DSC) MRI and dynamic contrast-enhanced MRI (DCE). We evaluate the accuracy and repeatability of common dynamic MRI modeling schemes under clinically-relevant scanning conditions, and create digital reference objects and noise correction algorithms to address errors in these schemes. Recently, we have been applying recurrent neural networks to dynamic MR data to predict patient outcomes and tease out relationships with other imaging modalities, such as PET imaging.
+<br /><br />
+Project links: <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10573/105732V/Anatomical-DCE-MRI-phantoms-generated-from-glioma-patient-data/10.1117/12.2294961.shortc" target="_blank">Latest publication</a> &#9679; <a href="https://www.nature.com/articles/s41598-017-11554-w" target="_blank"/>Recent publication</a> &#9679; <a href="https://github.com/QTIM-Lab/qtim_tools/tree/master/qtim_tools/qtim_dce" target="_blank"/>QTIM DCE</a> &#9679; <a href="https://github.com/QTIM-Lab/qtim_Phantoms" target="_blank"/>QTIM Phantoms</a> 
+</div>
+</div>
+
+<div class="research-topic" id="viz">
+<div class="research-bubble" style="background-image: url(../images/research/deepdream.png);"></div>
+<div class="research-text">
+<h2>Image Visualization</h2>
+We develop interactive data visualizations for medical imaging data, and research novel algorithms for practically visualizing features generated by machine learning algorithms. Using generative adversarial networks and filter activation visualizations, we isolate and characterize the most informative features in both 2D and 3D neural networks. We collaborate with researchers at the Harvard-Smithsonian Center for Astrophysics to develop Glue, an open-source data visualization platform. 
+<br /><br />
+Project links: <a href=" http://glueviz.org/index.html" target="_blank">Glue</a> &#9679; <a href="https://github.com/QTIM-Lab/DeepNeuro" target="_blank"/>DeepNeuro</a>
 </div>
 </div>
 
 <div class="research-topic">
-<div class="research-bubble" style="background-image: url(../images/Feature_Image_1.jpg);"></div>
-
+<div class="research-bubble" style="background-image: url(../images/research/knee.png);"></div>
 <div class="research-text">
-<h2>Retinopathy of Prematurity - Automatic Assessment</h2>
-James, fill in here.<br /><br />
-Project Links: <a href="https://github.com/QTIM-Lab/DeepNeuro">DeepNeuro</a> &#9679; <a href="https://github.com/QTIM-Lab/qtim_gbmSegmenter"/>qtim_bmSegmenter</a> &#9679; <a href=https://www.nmr.mgh.harvard.edu/user/8165>Segmentation Wizard (3D Slicer)</a> &#9679; <a href=https://www.nmr.mgh.harvard.edu/user/8165>Latest Publication</a>
+<h2>Other Projects</h2>
+We also work on applications of machine  learning for other medical applications, such as diagnosis of osteoarthritis from knee radiographs, predicting success of success of breast reconstruction from CT angiography, and automatic assessment of white matter changes due to proton therapy.
+<br /><br />
+Project links: <a href="https://github.com/QTIM-Lab/KneeDeep/" target="_blank">KneeDeep</a> &#9679; <a href="https://github.com/QTIM-Lab/DeepNeuro" target="_blank"/>DeepNeuro</a>
 </div>
 </div>
