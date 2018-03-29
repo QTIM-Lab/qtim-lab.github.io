@@ -4,341 +4,401 @@ title: People
 permalink: /people/
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
 
-  
-  <style>
-   
-   .detailsDiv {
-	   border-style: groove;
-	   height: 500px;
-	   overflow: hidden;
-   }
-   .col-sm-3 {
-   	   padding: 1em;
-   }
+.detailsDiv {
+ margin-top: 30px;
+ border-style: groove;
+}
 
-  </style>
-  
-</head>
-<body>
-<div id="top" class="container">
+.detailsDiv img {
+  margin: auto;
+  display: block;
+}
 
-<div class="row">
-<div class="col-sm-3">
-	<a class="person" id="Bruce" href="#detailsDivID">
-      <img src="../images/people/default.jpg" class="img-responsive" style="width:250px" alt="Image">
-	  <h4>Bruce Rosen</h4>
-	  <span>Director, Atinoula A. Martinos Center for Biomedical Imaging / Professor of Radiology, Harvard Medical School</span>
-	</a>
-</div>
+.col-6 col-md-4 custom-col {
+ padding: 1em;
+}
 
-<div class="col-sm-3">
-	<a class="person" id="Jayashree" href="#detailsDivID">
-      <img src="../images/people/jayashree_500.png" class="img-responsive" style="width:250px" alt="Image">
-	  <h4>Jayashree Kalpathy-Cramer</h4>
-	  <span>Associate Professor, Radiology, MGH/Harvard Medical School</span>
-	</a>
-</div>
+.custom-col {
+  width: 200px;
+  margin: 5px 20px 5px 20px;
+}
 
-<div class="col-sm-3"> 
-    <a class="person" id="Elizabeth" href="#detailsDivID">
-      <img src="../images/people/elizabeth_500.png" class="img-responsive" style="width:250px;" alt="Image"> 
-	  <h4>Elizabeth Gerstner</h4>
-	  <span>Neuro-Oncologist, Massachussetts General Hospital</span>
-	</a>  
-</div>
+.custom-col h4 {
+  text-align: center;
+  line-height: 1.4;
+  margin: 10px 0px;
+}
 
-<div class="col-sm-3">
-     <a class="person" id="Yi" href="#detailsDivID">   
-  	 <img src="../images/people/yifen_500.jpg" class="img-responsive" style="width:250px;" alt="Image">  
-	  <h4>Yi-Fen Yen</h4>
-	  <span>Assistant Professor, Harvard Medical School</span>
-	  
+.flex-container {
+  margin: 0;
+  list-style: none;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-image {
+  width: 200px;
+  height: auto;
+  max-width: none;
+  opacity: 1;
+  transition: opacity .1s ease-out;
+  -moz-transition: opacity .1s ease-out;
+  -webkit-transition: opacity .1s ease-out;
+  -o-transition: opacity .1s ease-out;
+  overflow: hidden;
+}
+
+.flex-image:hover {
+  opacity: .7;
+}
+
+.image-container {
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  overflow: hidden;
+  height: 200px;
+}
+
+</style>
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<div class="flex-container">
+
+  <div class="custom-col">
+    <a class="person" id="Bruce" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/bruce_icon.png" class="flex-image" alt="Image">
+      </div>
+      <h4>Bruce Rosen<br />
+      Lab Chief</h4>
     </a>
-	</div>
+  </div>
+
+  <div class="custom-col">
+    <a class="person" id="Jayashree" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/jayashree_icon.jpg" class="flex-image" alt="Image">
+      </div>
+      <h4>Jayashree <br />Kalpathy-Cramer</br>
+      Lab Director </h4>
+    </a>
+  </div>
+
+  <div class="custom-col">
+    <a class="person" id="Elizabeth" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/elizabeth_icon.png" class="flex-image" alt="Image">
+      </div>
+      <h4>Elizabeth Gerstner<br />
+      Lab Director </h4>
+    </a>
+  </div>
+
+  <div class="custom-col">
+    <a class="person" id="Yifen" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/yifen_icon.jpg" class="flex-image" alt="Image">
+      </div>
+      <h4>Yi-Fen Yen</br>
+      Assistant Professor</h4>
+    </a>
+  </div>
+
+  <div class="custom-col">
+    <a class="person" id="James" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/james_icon.png" class="flex-image" alt="Image">
+      </div>
+      <h4>James Brown</br>
+      Research Fellow</h4>
+    </a>
+  </div>
+
+  <div class="custom-col">
+    <a class="person" id="Ina" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/ina_icon.png" class="flex-image" alt="Image">
+      </div>
+      <h4>Ina Ly</br>
+      Research Fellow</h4>
+    </a>
+  </div>
+
+  <div class="custom-col">
+    <a class="person" id="Ken" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/ken_icon.jpg" class="flex-image" alt="Image">
+      </div>
+      <h4>Ken Chang</br>
+      Graduate Student</h4>
+    </a>
+  </div>
+
+  <div class="custom-col">
+    <a class="person" id="Andrew" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/andrew_icon.jpg" class="flex-image" alt="Image">
+      </div>
+      <h4>Andrew Beers</br>
+      Programmer</h4>
+    </a>
+
+  </div>
+
+  <div class="custom-col"> 
+    <a class="person" id="Samarth" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/samarth_icon.jpg" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Samarth Nandekar</br>
+      Programmer</h4>
+    </a>  
+  </div>
+
+  <div class="custom-col"> 
+    <a class="person" id="Jonathan" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/jonathan_icon.jpg" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Jonathan Cardona</br>
+      Research Technician</h4>
+    </a>  
+  </div>
+
+  <div class="custom-col"> 
+    <a class="person" id="Sunakshi" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/sunakshi_icon.jpg" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Sunakshi Paul</br>
+      Research Technician</h4>
+    </a>  
+  </div>
+
 </div>
 
+<div style="padding: 30px 0; margin: 10px 0; border-style: solid; border-width: 2px; border-color: black; border-left: none; border-right: none">
 
-<div class="row">
-       
-	<div class="col-sm-3"> 
-	<a class="person" id="James" href="#detailsDivID">
-      <img src="../images/people/james_500.png" class="img-responsive" style="width:250 px;" alt="Image"> 
-	  <h4>James Brown</h4>
-	  <span>Postdoctoral Research Fellow, Martinos Center / Harvard Medical School</span>
-	  </a>
-    </div>
-	
-    <div class="col-sm-3">
-	<a class="person" id="Ina" href="#detailsDivID">
-      <img src="../images/people/ina_500.png" class="img-responsive" style="width:250px;" alt="Image">  
-	  <h4>Ina Ly</h4>
-	  <span>Neuro-Oncology Fellow, Massachusetts General Hospital</span>
-	  </a>
-    </div>
-    
-	<div class="col-sm-3">
-	<a class="person" id="Ken" href="#detailsDivID">
-      <img src="../images/people/ken_c_500.jpg" class="img-responsive" style="width:250px;" alt="Image"> 
-		<h4>Ken Chang</h4>
-	  <span>MD/PhD Candidate, Harvard-MIT Division of Health Sciences and Technology</span>  
-	  </a>
-    </div>
-	
-    <div class="col-sm-3">
-	<a class="person" id="Andrew" href="#detailsDivID">
-      <img src="../images/people/andrew_b.jpg" class="img-responsive" style="width:250px;" alt="Image">
-	  <h4>Andrew Beers</h4>
-	  <span>Software developer,Martinos Center @ MGH</span>
-	  
-	</a>
-    </div>
-	
-  </div>
-  
-  
-  <br><br>
-  
-    <div class="row">
-    <div class="col-sm-3">
-	<a class="person" id="samarth" href="#detailsDivID"">
-      <img src="../images/people/samarth_500.jpg" class="img-responsive" style="width:250px;" alt="Image">
-	  <h4>Samarth Nandekar</h4>
-	  <span>Software developer,Martinos Center @ MGH</span>
-	  </a>
-    </div>
-    
-	<div class="col-sm-3">
-	<a class="person" id="Jonathan" href="#detailsDivID">
-      <img src="../images/people/jonathan_c_500.jpg" class="img-responsive" style="width:250px;" alt="Image"> 
-		<h4>Jonathan Cardona</h4>
-	  <span>Research Technician, Martinos Center @ MGH</span>  
-	  </a>
-    </div>
-	
-    <div class="col-sm-3">
-	<a class="person" id="Sunakshi" href="#detailsDivID">
-      <img src="../images/people/default.jpg" class="img-responsive" style="width:250px;" alt="Image">
-	  <h4>Sunakshi Paul</h4>
-	  <span>Research Technician, Martinos Center @ MGH</span>
-	  
-	 </a>
-    </div>
-    
-	<div class="col-sm-3" href="#detailsDivID">
-	<a class="person" id="Eva" href="#detailsDivID">
-      <img src="../images/people/default.jpg" class="img-responsive" style="width:250px;" alt="Image">
-	  <h4>Eva-Maria Ratai</h4>
-	  <span>..........</span>
-	  
-	</a>
-    </div>
-	
-  </div>
-  <br><br>
-  
-  <div class="row">
-    <div class="col-sm-3">
-	<a class="person" id="Karl" href="#detailsDivID">
-      <img src="../images/people/default.jpg" class="img-responsive" style="width:250px;" alt="Image">
-	  <h4>Karl Helmer</h4>
-	  <span>....................</span>
-	</a>
-    </div>
-    
-	<div class="col-sm-3">
-	<a class="person" id="Artem" href="#detailsDivID">
-      <img src="../images/people/artem_500.png" class="img-responsive" style="width:250px;" alt="Image"> 
-		<h4>Artem Mamonov</h4>
-	  <span>....................</span>  
-	</a>
-    </div>
-	
-    <div class="col-sm-3">
-	<a class="person" id="Stephanie" href="#detailsDivID">
-      <img src="../images/people/default.jpg" class="img-responsive" style="width:250px;" alt="Image">
-	  <h4>Stephanie Salcedo</h4>
-	  <span>.............</span>
-	  
-	</a>
-    </div>
-    
-	<div class="col-sm-3">
-	<a class="person" id="Armin" href="#detailsDivID">
-      <img src="../images/people/default.jpg" class="img-responsive" style="width:250px;" alt="Image">
-	  <h4>Armin Thomas</h4>
-	  <span>..........</span>
-	  
-	</a>
-    </div>
-	
-  </div>
-  <br><br>
-  
-  <div class="detailsDiv" id="detailsDivID"> 
-     
-    <div class="row">	 
-        <div class="col-sm-4"> 
-			<img src="" id="imagename" class="img-responsive" style="width:345px;" alt="Image">
-		</div> 
-		<div class="col-sm-8">
-			<h1 id="personName"></h1>
-			<h2 id="personTitle"></h2>
-			<p class="desc" id="pdetails"></p>
-			<a href="#top">Back to top</a>
-		</div>
-    </div>
-  
-  </div>
-  
-  <br>
-  <br>
-  
+<div style="text-align: center">
+<span style="font-weight: bold; font-size: 22px;">Additional Team Members<br /><br /></span>
+</div>
+
+<div class="flex-container">
+<div class="custom-col"> 
+<strong>Collaborators</strong>
+<ul>
+  <li>Eva-Maria Ratai</li>
+  <li>Karl Helmer</li>
+</ul>
+</div>
+<div class="custom-col"> 
+<strong>Students</strong>
+<ul>
+  <li>Kathi Hoebel</li>
+  <li>Anisha Mittal</li>
+  <li>Jimmy Hu</li>
+</ul> 
+</div>
+<div class="custom-col"> 
+<strong>Alumni</strong>
+<ul>
+  <li>Artem Mamonov</li>
+  <li>Stephanie Salcedo</li>
+  <li>Armin Thomas</li>
+  <li>Kyra Donohue</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div class="detailsDiv" id="detailsDivID"> 
+
+     <img src="" id="imagename" class="img-responsive" alt="Image">
+     <h1 id="personName"></h1>
+     <h2 id="personTitle"></h2>
+     <p class="desc" id="pdetails"></p>
+     <a href="#top">Back to top</a>
+ </div>
+
+</div>
+
+<br>
+<br>
+
 
 </div>
 
 <script>
 
-$("#samarth").click(function() {
-   
-	$("#personTitle").html("Programmer, Martinos Center @ MGH");
-	
-	$("#pdetails").html('Samarth studied masters in Information Systems from Northeastern University,Boston,USA.His interests include web application development. Outside of work,he enjoys playing games and traveling.<a href="mailto:snandekar@mgh.harvard.edu">Email</a>, <a href="https://www.linkedin.com/in/samarth-nandekar-85a41a49">LinkedIn</a>');
-	
-	
-});
+  $("#Samarth").click(function() {
 
-$("#Andrew").click(function() {
+   $("#imagename").attr("src", "../images/people/samarth_500.jpg")
 
-	$("#personTitle").html("Programmer, Martinos Center @ MGH");
-	
-	$("#pdetails").html("<p>Andrew studied icebergs, phytoplankton, and sustainable architecture for an Environmental Studies degree at Brown University, but then abandoned all of that to work on quantitative tumor imaging and deep learning at QTIM instead. Inside of the lab, he's interested in dynamic contrast MRI, comparing and benchmarking radiomics software, and creating open-source deep learning tools for the medical imaging filed. Outside of the lab, he volunteers at a local progressive bookstore, plays basketball, and hikes in the Adirondacks. <a href='mailto:abeers@mgh.harvard.edu'>Email</a>, <a href=https://www.linkedin.com/in/andrewlbeers/>LinkedIn</a></p>");
-		
-});
+   $("#personTitle").html("Programmer, Martinos Center @ MGH");
 
-$("#Jayashree").click(function() {
+   $("#pdetails").html('Samarth received a Masters in Information Systems from Northeastern University (Boston, USA). His interests include web application development. Outside of work, he enjoys playing games and traveling. <a href="mailto:snandekar@mgh.harvard.edu">Email</a>, <a href="https://www.linkedin.com/in/samarth-nandekar-85a41a49">LinkedIn</a>.');
 
-	$("#personTitle").html("Associate Professor, Radiology, MGH/Harvard Medical School");
-	
-	$("#pdetails").html('<p>My reasearch lies at the intersection of machine learning, statistics, informatics, image acquisition and analysis with a goal towards clinical translation. I am an electrical engineer by training, having receied a B.Tech in EE from IIT Bombay and a PhD in EE from Rensselaer Polytechnic Institute. After a number of years in the semiconductor industry, I returned to academia following a MS in Biomedical Informatics from OHSU.<br /><br/>My current projects include quantitative imaging in cancer, image analysis and decision support for retinal imaging, cloud computing, mathematical modeling of drug delivery in cancer, crowd sourcing and challenges,  algorithm development and deep learning.<br /><br /> Outside of work, I enjoy traveling with family, photography, tennis and occasionally rock climbing. <a href="mailto:kalpathy@nmr.mgh.harvard.edu">Email</a>, <a href=https://www.linkedin.com/in/jayashree-kalpathy-cramer-0ab6315/>LinkedIn</a>, <a href=https://www.nmr.mgh.harvard.edu/user/8165>Martinos Center Page</a></p>');
-		
-});
 
-$("#Elizabeth").click(function() {
+ });
 
-	$("#personTitle").html("Neuro-Oncologist, Massachussetts General Hospital");
-	
-	$("#pdetails").html("<p>I am a Neuro-Oncologist with an interest in incorporating imaging techniques into clinical trials to better understand tumor biology and response to treatment. Outside of work, I enjoy traveling and spending time with my husband and twin daughters. <a href='mailto:EGERSTNER@mgh.harvard.edu'>Email</a>, <a href=https://www.nmr.mgh.harvard.edu/user/7244>Martinos Center Page</a>");
-		
-});
+  $("#Andrew").click(function() {
 
-$("#Yi").click(function() {
+   $("#imagename").attr("src", "../images/people/andrew_500.jpg")
 
-	$("#personTitle").html("Assistant Professor, Harvard Medical School");
-	
-	$("#pdetails").html("<p>I am an MRI physicist and my expertise is in MRI pulse sequence design and pharmacokinetic modeling. My research focus is on MR quantitation of micro-environment for brain tumor imaging. My work involves optimization of MRI pulse sequences and clinical protocols, development of imaging biomarkers for drug delivery and treatment monitoring, quantitation of cell abnormalities using MR diffusion, perfusion and spectroscopy techniques, and cross-modal comparison of MRI to PET, CT and Optical Imaging.</br></br>My second area of research interest is hyperpolarized 13C metabolic MRI. In the past few years, my work involved the design of new MRSI pulse sequences, polarized 13C-probe development and pharmacokinetic modeling of metabolic conversion. Majority of my hyperpolarized 13C research was conducted pre-clinically, on animal models of prostate cancer, brain tumors, liver cancer, cardiac disorder, renal function, and arthritis.</br></br>My early research involved the subjective experience of pain using fMRI, BOLD deactivation by cross-modal stimuli, quantitative cerebral blood flow (CBF) and cerebral blood volume (CBV) for tumor assessment, caffeine effects on BOLD and CBF, and fMRI in stroke and epilepsy patients. <a href='mailto:YYEN1@mgh.harvard.edu'>Email</a>, <a href=https://www.linkedin.com/in/yi-fen-yen-6a181224//>LinkedIn</a>, <a href=https://www.nmr.mgh.harvard.edu/user/3589446>Martinos Center Page</a>");
-		
-});
+   $("#personTitle").html("Programmer, Martinos Center @ MGH");
 
-$("#James").click(function() {
+   $("#pdetails").html("<p>Andrew studied icebergs, phytoplankton, and sustainable architecture for an Environmental Studies degree at Brown University, but then abandoned all of that to work on quantitative tumor imaging and deep learning at QTIM instead. Inside of the lab, he's interested in dynamic contrast MRI, comparing and benchmarking radiomics software, and creating open-source deep learning tools for the medical imaging filed. Outside of the lab, he volunteers at a local progressive bookstore, plays basketball, and hikes in the Adirondacks. <a href='mailto:abeers@mgh.harvard.edu'>Email</a>, <a href=https://www.linkedin.com/in/andrewlbeers/>LinkedIn</a>.</p>");
 
-	$("#personTitle").html("Postdoctoral Research Fellow, Martinos Center @ MGH");
-	
-	$("#pdetails").html("<p>James studied computer science and biomedical imaging at the University of Birmingham (UK). His interests include image registration, segmentation, shape analysis and deep learning. Outside of work he enjoys bouldering, playing board games and making noise on a guitar (and more recently, a ukulele). <a href='mailto:jbrown97@mgh.harvard.edu'>Email</a>, <a href='https://www.linkedin.com/in/james-brown-a241138b'/>LinkedIn</a></p>");
-		
-});
+ });
 
-$("#Ina").click(function() {
+  $("#Jayashree").click(function() {
 
-	$("#personTitle").html("Neuro-Oncology Fellow, Massachusetts General Hospital");
-	
-	$("#pdetails").html("<p>I'm a Neuro-Oncology Fellow interested in using novel imaging techniques to study brain tumor biology, with the goal of translating these into clinical practice to help with diagnosis and clinical decision-making. Prior to joining QTIM, I completed my clinical training in Neurology at the University of Washington and in Neuro-Oncology at MGH/Dana-Farber Cancer Institute. In my free time, I enjoy traveling, running, and reading crime novels. <a href='mailto:ILY@PARTNERS.ORG'>Email</a></p>");
-		
-});
+   $("#imagename").attr("src", "../images/people/jayashree_500.png")
 
-$("#Ken").click(function() {
+   $("#personTitle").html("Associate Professor, Radiology, MGH/Harvard Medical School");
 
-	$("#personTitle").html("MD/PhD Candidate, Harvard-MIT Division of Health Sciences and Technology");
-	
-	$("#pdetails").html("<p>Ken grew up in New York City and attended college at Penn. After moving to Boston, he joined QTIM to explore his interests in neurooncology, imaging informatics, and automated methods. His current projects include lesion segmentation, radiogenomics, and deep learning techniques. Outside of lab, Ken enjoys bowling, ping pong, and bike riding. <a href='mailto:kenchang@mit.edu'>Email</a>, <a href=https://www.linkedin.com/in/ken-chang-4ab12023/>LinkedIn</a>, <a href=https://www.nmr.mgh.harvard.edu/user/3589141>Martinos Center Page</a></p>");
-		
-});
+   $("#pdetails").html('<p>My reasearch lies at the intersection of machine learning, statistics, informatics, image acquisition and analysis with a goal towards clinical translation. I am an electrical engineer by training, having receied a B.Tech in EE from IIT Bombay and a PhD in EE from Rensselaer Polytechnic Institute. After a number of years in the semiconductor industry, I returned to academia following a MS in Biomedical Informatics from OHSU.<br /><br/>My current projects include quantitative imaging in cancer, image analysis and decision support for retinal imaging, cloud computing, mathematical modeling of drug delivery in cancer, crowd sourcing and challenges,  algorithm development and deep learning.<br /><br /> Outside of work, I enjoy traveling with family, photography, tennis and occasionally rock climbing. <a href="mailto:kalpathy@nmr.mgh.harvard.edu">Email</a>, <a href=https://www.linkedin.com/in/jayashree-kalpathy-cramer-0ab6315/>LinkedIn</a>, <a href=https://www.nmr.mgh.harvard.edu/user/8165>Martinos Center Page</a>.</p>');
 
-$("#Jonathan").click(function() {
+ });
 
-	$("#personTitle").html("Research Technician, Martinos Center @ MGH");
-	
-	$("#pdetails").html("<p>Jonathan has a degree in Biomedical Engineering and a Masters in Bioimaging; he is interested in optimizing clinical/research protocols and pulse sequences and how they can be applied in a clinical setting. In the lab, he is in charge of scanning all of our patients, data management and pre-processing of data. Outside the lab, he enjoys spending time with family and friends and playing soccer. <a href='mailto:JCARDONA6@mgh.harvard.edu'>Email</a>, <a href=https://www.linkedin.com/in/jonathan-cardona-07943760/>LinkedIn</a>, <a href=https://www.nmr.mgh.harvard.edu/user/3653785>Martinos Center Page</a></p>");
-		
-});
+  $("#Elizabeth").click(function() {
 
-$("#Artem").click(function() {
+   $("#imagename").attr("src", "../images/people/elizabeth_500.png")
 
-	$("#personTitle").html("Alumni Programmer, Martinos Center @ MGH");
-	$("#pdetails").html("Coming soon...");
-		
-});
+   $("#personTitle").html("Neuro-Oncologist, Massachussetts General Hospital");
 
-$("#Sunakshi").click(function() {
+   $("#pdetails").html("<p>I am a Neuro-Oncologist with an interest in incorporating imaging techniques into clinical trials to better understand tumor biology and response to treatment. Outside of work, I enjoy traveling and spending time with my husband and twin daughters. <a href='mailto:EGERSTNER@mgh.harvard.edu'>Email</a>, <a href=https://www.nmr.mgh.harvard.edu/user/7244>Martinos Center Page</a>.");
 
-	$("#personTitle").html("Research Technician, Martinos Center @ MGH");
-	$("#pdetails").html("Coming soon...");
-		
-});
+ });
 
-$("#Karl").click(function() {
+  $("#Yifen").click(function() {
 
-	$("#personTitle").html("Collaborators, Martinos Center @ MGH");
-	$("#pdetails").html("Coming soon...");
-		
-});
+   $("#imagename").attr("src", "../images/people/yifen_500.jpg")
 
-$("#Stephanie").click(function() {
+   $("#personTitle").html("Assistant Professor, Harvard Medical School");
 
-	$("#personTitle").html("Alumni, Martinos Center @ MGH");
-	$("#pdetails").html("Coming soon...");
-		
-});
+   $("#pdetails").html("<p>I am an MRI physicist and my expertise is in MRI pulse sequence design and pharmacokinetic modeling. My research focus is on MR quantitation of micro-environment for brain tumor imaging. My work involves optimization of MRI pulse sequences and clinical protocols, development of imaging biomarkers for drug delivery and treatment monitoring, quantitation of cell abnormalities using MR diffusion, perfusion and spectroscopy techniques, and cross-modal comparison of MRI to PET, CT and Optical Imaging.</br></br>My second area of research interest is hyperpolarized 13C metabolic MRI. In the past few years, my work involved the design of new MRSI pulse sequences, polarized 13C-probe development and pharmacokinetic modeling of metabolic conversion. Majority of my hyperpolarized 13C research was conducted pre-clinically, on animal models of prostate cancer, brain tumors, liver cancer, cardiac disorder, renal function, and arthritis.</br></br>My early research involved the subjective experience of pain using fMRI, BOLD deactivation by cross-modal stimuli, quantitative cerebral blood flow (CBF) and cerebral blood volume (CBV) for tumor assessment, caffeine effects on BOLD and CBF, and fMRI in stroke and epilepsy patients. <a href='mailto:YYEN1@mgh.harvard.edu'>Email</a>, <a href=https://www.linkedin.com/in/yi-fen-yen-6a181224//>LinkedIn</a>, <a href=https://www.nmr.mgh.harvard.edu/user/3589446>Martinos Center Page</a>");
 
-$("#Armin").click(function() {
+ });
 
-	$("#personTitle").html("Alumni, Martinos Center @ MGH");
-	$("#pdetails").html("Coming soon...");
+  $("#James").click(function() {
 
-});
+   $("#imagename").attr("src", "../images/people/james_500.png")
 
-$("#Eva").click(function() {
+   $("#personTitle").html("Postdoctoral Research Fellow, Martinos Center @ MGH");
 
-	$("#personTitle").html("Collaborators, Martinos Center @ MGH");
-	$("#pdetails").html("Cmming soon...");
-	
-});
+   $("#pdetails").html("<p>James studied computer science and biomedical imaging at the University of Birmingham (UK). His interests include image registration, segmentation, shape analysis and deep learning. Outside of work he enjoys bouldering, playing board games and making noise on a guitar (and more recently, a ukulele). <a href='mailto:jbrown97@mgh.harvard.edu'>Email</a>, <a href='https://www.linkedin.com/in/james-brown-a241138b'/>LinkedIn</a></p>");
 
-$("#Bruce").click(function() {
+ });
 
-	$("#personTitle").html("Director, Atinoula A. Martinos Center for Biomedical Imaging, Professor in Radiology, Harvard Medical School");
-	
-	$("#pdetails").html("I have over 30 years of experience developing and applying novel functional neuroimaging techniques to measure hemodynamic and metabolic changes associated with brain activation and cerebrovascular insult, as well as complementary tools to measure microvascular and microstructural morphology. The techniques I have helped to establish include functional MRI (fMRI), which was introduced by my group in the early 1990s. The many tools my group has initiated are today used by research centers and hospitals throughout the world to study and evaluate patients with stroke, brain tumors, dementia, and neurologic and psychological disorders. Most recently, my work has focused on the integration of fMRI data with information from other modalities, including positron emission tomography (PET), magnetoencephalography (MEG) and noninvasive optical imaging.");
-		
-});
+  $("#Ina").click(function() {
 
-$(".person").click(function() {
-	$("#detailsDivID").show()
-    $("#personName").html($(this).children('h4').html());
-	$("#imagename").attr("src", $(this).children('img').attr('src'));
-});
+   $("#imagename").attr("src", "../images/people/ina_500.png")
 
-$("#detailsDivID").hide()
+   $("#personTitle").html("Neuro-Oncology Fellow, Massachusetts General Hospital");
+
+   $("#pdetails").html("<p>I'm a Neuro-Oncology Fellow interested in using novel imaging techniques to study brain tumor biology, with the goal of translating these into clinical practice to help with diagnosis and clinical decision-making. Prior to joining QTIM, I completed my clinical training in Neurology at the University of Washington and in Neuro-Oncology at MGH/Dana-Farber Cancer Institute. In my free time, I enjoy traveling, running, and reading crime novels. <a href='mailto:ILY@PARTNERS.ORG'>Email</a></p>");
+
+ });
+
+  $("#Ken").click(function() {
+
+   $("#imagename").attr("src", "../images/people/ken_500.jpg")
+
+   $("#personTitle").html("MD/PhD Candidate, Harvard-MIT Division of Health Sciences and Technology");
+
+   $("#pdetails").html("<p>Ken grew up in New York City and attended college at Penn. After moving to Boston, he joined QTIM to explore his interests in neurooncology, imaging informatics, and automated methods. His current projects include lesion segmentation, radiogenomics, and deep learning techniques. Outside of lab, Ken enjoys bowling, ping pong, and bike riding. <a href='mailto:kenchang@mit.edu'>Email</a>, <a href=https://www.linkedin.com/in/ken-chang-4ab12023/>LinkedIn</a>, <a href=https://www.nmr.mgh.harvard.edu/user/3589141>Martinos Center Page</a></p>");
+
+ });
+
+  $("#Jonathan").click(function() {
+
+   $("#imagename").attr("src", "../images/people/jonathan_500.png")
+
+   $("#personTitle").html("Research Technician, Martinos Center @ MGH");
+
+   $("#pdetails").html("<p>Jonathan has a degree in Biomedical Engineering and a Masters in Bioimaging; he is interested in optimizing clinical/research protocols and pulse sequences and how they can be applied in a clinical setting. In the lab, he is in charge of scanning all of our patients, data management and pre-processing of data. Outside the lab, he enjoys spending time with family and friends and playing soccer. <a href='mailto:JCARDONA6@mgh.harvard.edu'>Email</a>, <a href=https://www.linkedin.com/in/jonathan-cardona-07943760/>LinkedIn</a>, <a href=https://www.nmr.mgh.harvard.edu/user/3653785>Martinos Center Page</a></p>");
+
+ });
+
+  $("#Artem").click(function() {
+
+   $("#personTitle").html("Alumni Programmer, Martinos Center @ MGH");
+   $("#pdetails").html("Coming soon...");
+
+ });
+
+  $("#Sunakshi").click(function() {
+
+   $("#imagename").attr("src", "../images/people/sunakshi_icon.jpg")
+
+   $("#personTitle").html("Research Technician, Martinos Center @ MGH");
+   $("#pdetails").html("Coming soon...");
+
+ });
+
+  $("#Karl").click(function() {
+
+   $("#personTitle").html("Collaborators, Martinos Center @ MGH");
+   $("#pdetails").html("Coming soon...");
+
+ });
+
+  $("#Stephanie").click(function() {
+
+   $("#personTitle").html("Alumni, Martinos Center @ MGH");
+   $("#pdetails").html("Coming soon...");
+
+ });
+
+  $("#Armin").click(function() {
+
+   $("#personTitle").html("Alumni, Martinos Center @ MGH");
+   $("#pdetails").html("Coming soon...");
+
+ });
+
+  $("#Eva").click(function() {
+
+   $("#personTitle").html("Collaborators, Martinos Center @ MGH");
+   $("#pdetails").html("Cmming soon...");
+
+ });
+
+  $("#Bruce").click(function() {
+
+   $("#imagename").attr("src", "../images/people/bruce_500.png")
+
+   $("#personTitle").html("Director, Atinoula A. Martinos Center for Biomedical Imaging, Professor in Radiology, Harvard Medical School");
+
+   $("#pdetails").html("I have over 30 years of experience developing and applying novel functional neuroimaging techniques to measure hemodynamic and metabolic changes associated with brain activation and cerebrovascular insult, as well as complementary tools to measure microvascular and microstructural morphology. The techniques I have helped to establish include functional MRI (fMRI), which was introduced by my group in the early 1990s. The many tools my group has initiated are today used by research centers and hospitals throughout the world to study and evaluate patients with stroke, brain tumors, dementia, and neurologic and psychological disorders. Most recently, my work has focused on the integration of fMRI data with information from other modalities, including positron emission tomography (PET), magnetoencephalography (MEG) and noninvasive optical imaging.");
+
+ });
+
+  $(".person").click(function() {
+   $("#detailsDivID").show()
+   $("#personName").html($(this).children('h4').html());
+   $("#imagename").attr("src", $(this).children('img').attr('src'));
+ });
+
+  $("#detailsDivID").hide()
 
 </script>
 
