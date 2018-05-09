@@ -151,6 +151,16 @@ permalink: /people/
   </div>
 
   <div class="custom-col">
+    <a class="person" id="Kathi" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/kathi_icon.jpg" class="flex-image" alt="Image">
+      </div>
+      <h4>Katharina Hoebel</br>
+      Graduate Student</h4>
+    </a>
+  </div>
+
+  <div class="custom-col">
     <a class="person" id="Andrew" href="#personTitle">
       <div class='image-container'>
         <img src="../images/people/andrew_icon.jpg" class="flex-image" alt="Image">
@@ -327,6 +337,17 @@ permalink: /people/
    $("#pdetails").html("<p>Ken grew up in New York City and attended college at Penn. After moving to Boston, he joined QTIM to explore his interests in neurooncology, imaging informatics, and automated methods. His current projects include lesion segmentation, radiogenomics, and deep learning techniques. Outside of lab, Ken enjoys bowling, ping pong, and bike riding. <a href='mailto:kenchang@mit.edu'>Email</a>, <a href=https://www.linkedin.com/in/ken-chang-4ab12023/>LinkedIn</a>, <a href=https://www.nmr.mgh.harvard.edu/user/3589141>Martinos Center Page</a></p>");
 
  });
+
+  $("#Kathi").click(function() {
+
+   $("#imagename").attr("src", "../images/people/kathi_500.jpg")
+
+   $("#personTitle").html("MD/PhD Candidate, Harvard-MIT Division of Health Sciences and Technology");
+
+   $("#pdetails").html("<p>Bio coming soon! <a href='mailto:khoebel@mit.edu>'>Email</a>, <a href=https://www.linkedin.com/in/katharina-hoebel-53b601154>LinkedIn</a>");
+
+ });
+
 
   $("#Jonathan").click(function() {
 
