@@ -201,6 +201,16 @@ permalink: /people/
     </a>  
   </div>
 
+  <div class="custom-col"> 
+    <a class="person" id="Anisha" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/anisha_icon.png" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Anisha Mittal</br>
+      Undergraduate Research Assistant</h4>
+    </a>  
+  </div>
+
 </div>
 
 <div style="padding: 30px 0; margin: 10px 0; border-style: solid; border-width: 2px; border-color: black; border-left: none; border-right: none">
@@ -220,7 +230,6 @@ permalink: /people/
 <div class="custom-col"> 
 <strong>Students</strong>
 <ul>
-  <li>Anisha Mittal</li>
   <li>Jimmy Hu</li>
 </ul> 
 </div>
@@ -263,6 +272,17 @@ permalink: /people/
    $("#personTitle").html("Programmer, Martinos Center @ MGH");
 
    $("#pdetails").html('Samarth received a Masters in Information Systems from Northeastern University (Boston, USA). His interests include web application development. Outside of work, he enjoys playing games and traveling. <a href="mailto:snandekar@mgh.harvard.edu">Email</a>, <a href="https://www.linkedin.com/in/samarth-nandekar-85a41a49">LinkedIn</a>.');
+
+
+ });
+
+  $("#Anisha").click(function() {
+
+   $("#imagename").attr("src", "../images/people/anisha_500.png")
+
+   $("#personTitle").html("Undergraduate Research Assistant, Martinos Center @ MGH");
+
+   $("#pdetails").html('Anisha is a junior at Harvard College studying Biomedical Engineering and Computer Science. She recently joined QTIM to explore her interests at the intersection of medicine and computer science, specifically applied to neurooncology and deep learning techniques. Outside of the lab, she enjoys traveling, photography, and coding robots. <a href="amittal@college.harvard.edu">Email</a>.');
 
 
  });
