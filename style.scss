@@ -855,6 +855,74 @@ footer {
   text-align: center;
 }
 
+// 
+// people
+//
+
+.detailsDiv {
+ margin-top: 30px;
+ border-style: groove;
+}
+
+.detailsDiv img {
+  margin: auto;
+  display: block;
+}
+
+.col-6 col-md-4 custom-col {
+ padding: 1em;
+}
+
+.custom-col {
+  width: 200px;
+  margin: 5px 20px 5px 20px;
+}
+
+.custom-col h4 {
+  text-align: center;
+  line-height: 1.4;
+  margin: 10px 0px;
+}
+
+.flex-container {
+  margin: 0;
+  list-style: none;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-image {
+  width: 200px;
+  height: auto;
+  max-width: none;
+  opacity: 1;
+  transition: opacity .1s ease-out;
+  -moz-transition: opacity .1s ease-out;
+  -webkit-transition: opacity .1s ease-out;
+  -o-transition: opacity .1s ease-out;
+  overflow: hidden;
+}
+
+.flex-image:hover {
+  opacity: .7;
+}
+
+.image-container {
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  overflow: hidden;
+  height: 200px;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
