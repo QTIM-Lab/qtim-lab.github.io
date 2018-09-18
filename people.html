@@ -92,6 +92,16 @@ permalink: /people/
     </a>
   </div>
 
+  <div class="custom-col"> 
+    <a class="person" id="Malika" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/malika_icon.png" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Malika Shahrawat</br>
+      Graduate Student</h4>
+    </a>  
+  </div>
+
   <div class="custom-col">
     <a class="person" id="Andrew" href="#personTitle">
       <div class='image-container'>
@@ -215,6 +225,18 @@ permalink: /people/
 
 
  });
+
+  $("#Malika").click(function() {
+
+   $("#imagename").attr("src", "../images/people/malika_500.png")
+
+   $("#personTitle").html("Masters Student, Martinos Center @ MGH");
+
+   $("#pdetails").html('Malika is a masters student at MIT studying computer science. She joined QTIM this year to explore her interests in machine learning and healthcare. Outside of lab and classes, she enjoys traveling and eating spicy food but mostly doing absolutely nothing. <a href="malikas@mit.edu">Email</a>.');
+
+
+ });
+
 
   $("#Andrew").click(function() {
 
