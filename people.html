@@ -93,12 +93,22 @@ permalink: /people/
   </div>
 
   <div class="custom-col"> 
+    <a class="person" id="Jay" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/jay_icon.png" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Jay Patel</br>
+      Graduate Student</h4>
+    </a>  
+  </div>
+
+  <div class="custom-col"> 
     <a class="person" id="Malika" href="#personTitle">
       <div class='image-container'>
         <img src="../images/people/malika_icon.png" class="flex-image" alt="Image"> 
       </div>
       <h4>Malika Shahrawat</br>
-      Graduate Student</h4>
+      Masters Student</h4>
     </a>  
   </div>
 
@@ -221,7 +231,18 @@ permalink: /people/
 
    $("#personTitle").html("Undergraduate Research Assistant, Martinos Center @ MGH");
 
-   $("#pdetails").html('Anisha is a junior at Harvard College studying Biomedical Engineering and Computer Science. She recently joined QTIM to explore her interests at the intersection of medicine and computer science, specifically applied to neurooncology and deep learning techniques. Outside of the lab, she enjoys traveling, photography, and coding robots. <a href="amittal@college.harvard.edu">Email</a>.');
+   $("#pdetails").html('Anisha is a junior at Harvard College studying Biomedical Engineering and Computer Science. She recently joined QTIM to explore her interests at the intersection of medicine and computer science, specifically applied to neurooncology and deep learning techniques. Outside of the lab, she enjoys traveling, photography, and coding robots. <a href="mailto:amittal@college.harvard.edu">Email</a>.');
+
+
+ });
+
+  $("#Jay").click(function() {
+
+   $("#imagename").attr("src", "../images/people/jay_500.png")
+
+   $("#personTitle").html("PhD Candidate, Harvard-MIT Division of Health Sciences and Technology");
+
+   $("#pdetails").html('Jay graduated from Case Western with a degree in Biomedical Engineering. After joining the HST PhD program, he started his graduate work with Dr. Polina Golland, working on image segmentation for cardiac MRI. He later moved to QTIM to explore his interests in deep learning, specifically focused on neuroradiologic imaging. Outside of lab, he enjoys fencing, squash, and playing trivia. <a href="mailto:jbpatel@mit.edu">Email</a>.');
 
 
  });
@@ -230,7 +251,7 @@ permalink: /people/
 
    $("#imagename").attr("src", "../images/people/malika_500.png")
 
-   $("#personTitle").html("Masters Student, Martinos Center @ MGH");
+   $("#personTitle").html("Masters Student, MIT Computer Science");
 
    $("#pdetails").html('Malika is a masters student at MIT studying computer science. She joined QTIM this year to explore her interests in machine learning and healthcare. Outside of lab and classes, she enjoys traveling and eating spicy food but mostly doing absolutely nothing. <a href="malikas@mit.edu">Email</a>.');
 
@@ -312,7 +333,7 @@ permalink: /people/
 
    $("#imagename").attr("src", "../images/people/kathi_500.jpg")
 
-   $("#personTitle").html("MD/PhD Candidate, Harvard-MIT Division of Health Sciences and Technology");
+   $("#personTitle").html("PhD Candidate, Harvard-MIT Division of Health Sciences and Technology");
 
    $("#pdetails").html("<p>Kathi joined QTIM after graduating from medical school to follow my passion for research at the intersection of (radiation) oncology, radiology and computer science. Outside of the lab and school I help organizing the German American Conference at Harvard and enjoy fencing, running, and reading. <a href='mailto:khoebel@mit.edu>'>Email</a>, <a href=https://www.linkedin.com/in/katharina-hoebel-53b601154>LinkedIn</a>");
 
