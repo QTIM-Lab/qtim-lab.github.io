@@ -1,4 +1,4 @@
-# QTIM - The Quantitative Tumor Imaging Lab at the Martinos Center
+# QTIM - The Quantitative Translational Imaging in Medicine Lab at the Martinos Center
 
 <img src="https://qtim-lab.github.io/images/Full_Lab_Picture.png">
 <em>Missing: Samarth, Sunakshi, Kathi, and Alton.</em>
