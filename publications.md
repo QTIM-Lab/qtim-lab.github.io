@@ -79,7 +79,7 @@ permalink: /publications/
 <div class="row">
     <div class="col-3"></div>
     <div class="col-6">
-            <h2>Lab Publications on <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=(Kalpathy+Cramer%5BAuthor%5D)+OR+(Kalpathy+Cramer+J%5BAuthor%5D)+OR+(Kalpathy+Cramer%2C+Jayashree%5BAuthor%5D)+OR+(Jayashree%2C+Kalpathy+Cramer%5BAuthor%5D)+OR+(Gerstner%2C+Elizabeth%5BAuthor%5D)+OR+(Gerstner+ER%5BAuthor%5D)+OR+(Gerstner%2C+Elizabeth+R%5BAuthor%5D)+OR+(Rosen%2C+Bruce%5BAuthor%5D)+OR+(Rosen%2C+B%5BAuthor%5D)+OR+(Rosen%2C+BR%5BAuthor%5D)+AND+(MGH+OR+Massachussetts+General+Hospital+OR+Martinos+Center)+NOT+(Publisher+Correction)">PubMed</a></h2>
+            <h2>Lab Publications on <a style='text-decoration: underline' href="https://www.ncbi.nlm.nih.gov/pubmed/?term=(Kalpathy+Cramer%5BAuthor%5D)+OR+(Kalpathy+Cramer+J%5BAuthor%5D)+OR+(Kalpathy+Cramer%2C+Jayashree%5BAuthor%5D)+OR+(Jayashree%2C+Kalpathy+Cramer%5BAuthor%5D)+OR+(Gerstner%2C+Elizabeth%5BAuthor%5D)+OR+(Gerstner+ER%5BAuthor%5D)+OR+(Gerstner%2C+Elizabeth+R%5BAuthor%5D)+AND+(MGH+OR+Massachussetts+General+Hospital+OR+Martinos+Center)+NOT+(Publisher+Correction)">PubMed</a></h2>
             
 
     </div>
@@ -97,7 +97,7 @@ permalink: /publications/
     // NOTE: apparently this is ultimately slower in the end and not the best coding practice, but I think here it is fine :)
     // See this page for more info on how it could be bad https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests
     var id_request = new XMLHttpRequest()
-    var id_query = 'esearch.fcgi?db=pubmed&term=(Kalpathy+Cramer%5BAuthor%5D)+OR+(Kalpathy+Cramer+J%5BAuthor%5D)+OR+(Kalpathy+Cramer%2C+Jayashree%5BAuthor%5D)+OR+(Jayashree%2C+Kalpathy+Cramer%5BAuthor%5D)+OR+(Gerstner%2C+Elizabeth%5BAuthor%5D)+OR+(Gerstner+ER%5BAuthor%5D)+OR+(Gerstner%2C+Elizabeth+R%5BAuthor%5D)+OR+(Rosen%2C+Bruce%5BAuthor%5D)+OR+(Rosen%2C+B%5BAuthor%5D)+OR+(Rosen%2C+BR%5BAuthor%5D)+AND+(MGH+OR+Massachussetts+General+Hospital+OR+Martinos+Center)+NOT+(Publisher+Correction)&retmode=json'
+    var id_query = 'esearch.fcgi?db=pubmed&term=(Kalpathy+Cramer%5BAuthor%5D)+OR+(Kalpathy+Cramer+J%5BAuthor%5D)+OR+(Kalpathy+Cramer%2C+Jayashree%5BAuthor%5D)+OR+(Jayashree%2C+Kalpathy+Cramer%5BAuthor%5D)+OR+(Gerstner%2C+Elizabeth%5BAuthor%5D)+OR+(Gerstner+ER%5BAuthor%5D)+OR+(Gerstner%2C+Elizabeth+R%5BAuthor%5D)+AND+(MGH+OR+Massachussetts+General+Hospital+OR+Martinos+Center)+NOT+(Publisher+Correction)&retmode=json'
     id_request.open(method='GET', url='https://eutils.ncbi.nlm.nih.gov/entrez/eutils/'+id_query, async=false)        
     id_request.send()
     var ids = JSON.parse(id_request.responseText)['esearchresult']['idlist']
@@ -145,10 +145,24 @@ permalink: /publications/
             })
 
             const publishing_details = document.createElement('h6')
+            var vol_issue_pages = '' // We have to build this string out of condition based on whether that info was available
+            if (citation['result'][id]['volume'] === '' && citation['result'][id]['pages'] === ''){
+                vol_issue_pages = ''
+            }else if (citation['result'][id]['issue'] === ''){
+                vol_issue_pages = citation['result'][id]['volume']+':'+citation['result'][id]['pages']+'. '
+            }else {
+                vol_issue_pages = citation['result'][id]['volume']+
+                              '('+citation['result'][id]['issue']+'):'+
+                                  citation['result'][id]['pages']+'. '
+            }
+
             publishing_details.innerHTML = citation['result'][id]['source']+'. '+
-                                citation['result'][id]['pubdate']+';'+
-                                citation['result'][id]['volume']+'('+citation['result'][id]['issue']+'):'+citation['result'][id]['pages']+'. '+
+                                citation['result'][id]['pubdate']+
+                                (vol_issue_pages === '' ? '. ':';')+vol_issue_pages+
                                 citation['result'][id]['elocationid']+'.'
+
+
+
 
             const pmid = document.createElement('span');pmid.setAttribute('class', 'text-muted')
             pmid.innerHTML = 'PMID: '+citation['result']['uids'][0]+' '
@@ -168,12 +182,16 @@ permalink: /publications/
                         col_citation.appendChild(title)
                             title.appendChild(title_link)
                         col_citation.appendChild(document.createElement('br'))
+                        col_citation.appendChild(document.createElement('br'))
                         col_citation.appendChild(authors)
                         col_citation.appendChild(publishing_details)
                         col_citation.appendChild(pmid)
                             pmid.appendChild(pmid_link)
                         col_citation.appendChild(document.createElement('br'))
                         col_citation.appendChild(similar_article_link)
+                        col_citation.appendChild(document.createElement('br'))
+                        col_citation.appendChild(document.createElement('br'))
+                        col_citation.appendChild(document.createElement('br'))
         }
         // setTimeout(()=>{build_HTML_from_citation(ids[i], i)}, i*506.125)
         setTimeout(()=>{build_HTML_from_citation(ids[i], i)}, i*500)
@@ -190,10 +208,6 @@ permalink: /publications/
     
     
 </script>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
 
