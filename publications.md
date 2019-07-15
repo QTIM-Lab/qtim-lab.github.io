@@ -18,7 +18,7 @@ permalink: /publications/
 </div>
 
 <hr>
-
+<!-- 
 <div class="container">
 
 <!-- SAMPLE STRUCTURE OF A CITATION - for future reference -->
@@ -212,7 +212,7 @@ permalink: /publications/
 
 
 
-
+ 
 
 <!-- NEW - 06/21/2019 - this is the query used to search on PubMed for our papers--> 
 
