@@ -4,9 +4,10 @@
 //
 
 // Sizes
-$maxWidth: 790px;
+$maxWidth: 1250px;//825px;
 $weightHeight: 50px;
 $buttonHeight: 220px;
+
 
 // Colors
 $blue: #4183C4;
@@ -37,6 +38,21 @@ $georgia: Georgia, serif;
   }
 }
 
+@mixin mediumview {
+  @media screen and (max-width: 985px) {
+    @content;
+  }
+}
+
+@mixin largeview {
+  @media screen and (max-width: 1095px) {
+    @content;
+  }
+}
+
+
+
+// I don't see this in use -BB
 @mixin smallview_only {
   @media screen and (max-width: 790px) and (min-width: 480px) {
     @content;

@@ -5,6 +5,7 @@
 // IMPORTS
 //
 
+@import "ben_bearce_custom_styles";
 @import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
@@ -14,16 +15,26 @@
 /**************/
 
 html {
+  margin: auto;
   font-size: 100%;
 }
 
 body {
+  //height: 100vh;
+  height: auto;
 	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
 
+.page {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .entry {
+  height: 100%;
 
   @include smallview {
     margin: 0 5%;
@@ -36,19 +47,21 @@ body {
 }
 
 .container {
+  
+  height: 60%;
   margin: 0 auto;
   max-width: $maxWidth;
   padding: 0 0px;
-  width: 100%;
+  
     @include smallview {
     padding: 0px;
   }
 }
 
 .wideview {
-
+  height: 100%;
   display: inherit;
-
+  
   @include smallview {
     /*display: none;*/
   }
@@ -60,11 +73,13 @@ body {
 }
 }
 
+/*
 .small-hide {
     @include smallview {
   display: none !important;
 }
 }
+*/
 
 .small-only {
   display: none;
@@ -122,6 +137,10 @@ h4 {
 
 p {
   margin: 15px 0;
+
+  @include smallview {
+    //font-size: 10px
+  }
 }
 
 a {
@@ -164,7 +183,26 @@ strong, b {
 }
 
 img {
-  max-width: 100%;
+  margin: 0px 120px 0px 120px;
+  max-width: 90%;
+
+  @include largeview {
+    width: 90%;
+    margin: 0px 30px 0px 35px;
+
+  }
+
+  @include mediumview {
+    width: 90%;
+    margin: 0px 30px 0px 35px;
+
+  }
+
+  @include mobile {
+    height: 200px;
+    margin: 0px 15px 0px 15px;
+  }
+
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -198,6 +236,533 @@ img {
 .clearfix:after {
     clear: both;
 }
+
+
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
+
+//
+// .home
+//
+
+.neural-net {
+  width: 69%;
+  height: 100%;
+  display: inline-block;
+  //border: 1px solid;
+
+  @include mobile {
+    margin: auto;
+    display: block;
+  }
+}
+
+.news {
+  width: 29%;
+  height: 867px;
+  float: right;
+  //border: 1px solid;
+
+  @include largeview {
+    height: 542px;
+    font-size: 80%;
+  }
+
+  @include mediumview {
+    height: 522px;
+    font-size: 70%;
+  }
+
+  @include smallview {
+    height: 502px;
+    font-size: 50%;
+  }
+
+  @include mobile {
+    display: block;
+    height: 482px;float: right;
+    font-size: 50%;
+    float: none;
+    margin: auto;
+    width: 100%;
+  }
+
+  ul {
+    margin: 0.75em 0;
+    padding: 0 1em;
+    list-style: none;
+  }
+
+  li:before { 
+    content: "";
+    border-color: transparent #111;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0.9em;
+    position: relative;
+  }
+
+  a {
+    text-decoration: underline;
+   }
+  .date {
+    font-weight: bold;
+    font-style: normal;
+  }
+
+}
+
+
+
+
+.ch-grid {
+  height: 255px;
+  margin: 0 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+
+  @include largeview {
+    height: 140px;
+  }  
+
+  @include mediumview {
+    height: 140px;
+  }
+
+  @include smallview {
+    height: 140px;
+  }
+
+  @include mobile {
+    height: 140px;
+    margin: 0 auto;
+  }
+
+}
+
+.ch-grid:after,
+.ch-item:before {
+  content: '';
+    display: table;
+}
+
+.ch-grid:after {
+  clear: both;
+}
+
+.ch-grid li {
+  //width: 220px;
+  //height: 220px;
+  width: 26%;
+  height: 100%;
+  
+  display: inline-block;
+  margin: 0 3%;
+
+  @include largeview {
+     
+  }
+
+  @include mediumview {
+    height: 100%;
+    width: 26%;
+    margin: 0 3%; 
+  }
+
+  @include smallview {
+    width: 30%;
+    margin: 0 1%;
+    height: 100%;   
+  }
+
+  @include mobile {
+    width: 40%;
+    margin: 0 4%;
+    height: 100%;
+  }
+
+}
+
+.ch-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+
+  cursor: default;
+  //border: 10px solid rgba(203,111,111,1);
+  box-shadow: 
+    inset 0 0 0 5px rgba(0,0,0,1),
+    0 1px 2px rgba(0,0,0,0.1);
+  transition: all 0.4s ease-in-out;
+
+  @include mediumview {
+    box-shadow: 
+      inset 0 0 0 5px rgba(0,0,0,1),
+      0 1px 2px rgba(0,0,0,0.1);    
+  }
+
+  @include smallview {
+    box-shadow: 
+      inset 0 0 0 5px rgba(0,0,0,1),
+      0 1px 2px rgba(0,0,0,0.1);
+  }
+
+  @include mobile {
+    box-shadow: 
+      inset 0 0 0 5px rgba(0,0,0,1),
+      0 1px 2px rgba(0,0,0,0.1);
+  }
+
+
+}
+
+.ch-img-1 { 
+  background-image: url(./images/research/brainseg.png);
+  background-size: 250px 250px;
+  font-size: 18px;
+
+
+
+  @include smallview {
+    background-image: url(./images/research/brainseg.png);
+    background-size: 150px 150px;
+    font-size: 12px;
+  }
+
+  @include mobile {
+    background-image: url(./images/research/brainseg.png);
+    background-size: 150px 150px;
+    font-size: 12px;
+  }
+
+}
+
+.ch-img-2 { 
+  background-image: url(./images/research/idh.png);
+  background-size: 250px 250px;
+  font-size: 22px;
+
+  @include smallview {
+    background-image: url(./images/research/idh.png);
+    background-size: 150px 150px;
+    font-size: 14px;
+  }
+
+  @include mobile {
+    background-image: url(./images/research/idh.png);
+    background-size: 150px 150px;
+    font-size: 14px;
+  }
+
+}
+
+.ch-img-3 { 
+  background-image: url(./images/research/retina.bmp);
+  background-size: 250px 250px;
+  font-size: 18px;
+
+  @include smallview {
+    background-image: url(./images/research/retina.bmp);
+    background-size: 150px 150px;
+    font-size: 12px;
+  }
+
+  @include mobile {
+    background-image: url(./images/research/retina.bmp);
+    background-size: 150px 150px;
+    font-size: 12px;
+  }
+
+}
+
+.ch-img-4 { 
+  background-image: url(./images/research/deepneuro_resized.png);
+  background-size: 225px 225px;
+  font-size: 22px;
+
+  @include smallview {
+    background-image: url(./images/research/deepneuro_resized.png);
+    background-size: 150px 150px;
+    font-size: 14px;
+  }
+
+  @include mobile {
+    background-image: url(./images/research/deepneuro_resized.png);
+    background-size: 150px 150px;
+    font-size: 14px;
+  }
+
+}
+
+.ch-img-5 { 
+  background-image: url(./images/research/dist_learn.jpg);
+  background-size: 250px 250px;
+  font-size: 20px;
+
+  @include smallview {
+    background-image: url(./images/research/dist_learn.jpg);
+    background-size: 150px 150px;
+    font-size: 12px;
+  }
+
+  @include mobile {
+    background-image: url(./images/research/dist_learn.jpg);
+    background-size: 150px 150px;
+    font-size: 12px;
+  }
+
+}
+
+.ch-img-6 { 
+  background-image: url(./images/research/clinical.png);
+  background-size: 250px 250px;
+  font-size: 22px;
+
+  @include smallview {
+    background-image: url(./images/research/clinical.png);
+    background-size: 150px 150px;
+    font-size: 14px;
+  }
+
+  @include mobile {
+    background-image: url(./images/research/clinical.png);
+    background-size: 150px 150px;
+    font-size: 14px;
+  }
+
+}
+
+.ch-img-7 { 
+  background-image: url(./images/research/dce.png);
+  background-size: 250px 250px;
+  font-size: 22px;
+
+  @include smallview {
+    background-image: url(./images/research/dce.png);
+    background-size: 150px 150px;
+    font-size: 14px;
+  }
+
+  @include mobile {
+    background-image: url(./images/research/dce.png);
+    background-size: 150px 150px;
+    font-size: 14px;
+  }
+
+}
+
+.ch-img-8 { 
+  background-image: url(./images/research/deepdream.png);
+  background-size: 250px 250px;
+  font-size: 22px;
+
+  @include smallview {
+    background-image: url(./images/research/deepdream.png);
+    background-size: 150px 150px;
+    font-size: 14px;
+  }
+
+  @include mobile {
+    background-image: url(./images/research/deepdream.png);
+    background-size: 150px 150px;
+    font-size: 14px;
+  }
+
+}
+
+.ch-info {
+  position: absolute;
+  background: rgba(203,111,111, 1);
+  box-shadow: 
+  inset 0 0 0 10px rgba(0,0,0,1),
+  0 1px 2px rgba(0,0,0,0.1);
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  transform: scale(0);
+
+  @include smallview {
+  box-shadow: 
+    inset 0 0 0 5px rgba(0,0,0,1),
+    0 1px 2px rgba(0,0,0,0.1);
+  }
+
+  @include mobile {
+  box-shadow: 
+    inset 0 0 0 5px rgba(0,0,0,1),
+    0 1px 2px rgba(0,0,0,0.1);
+  }
+
+
+}
+
+
+.ch-info-headline {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  //  margin: 0 15px;
+  padding: 50px 0 0 0;
+  font-weight: bold;
+  line-height: 1.2;
+  height: 140px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-shadow: 
+    0 0 1px #fff, 
+    0 1px 2px rgba(0,0,0,0.3);
+
+  font-size: 16px;
+
+  @include largeview {
+    padding: 25px 0 0 0;
+    height: 80px;
+    font-size: 14px;
+  }
+
+  @include mediumview {
+    font-size: 11px;
+  }
+
+
+  @include smallview {
+    font-size: 8px;
+    height: 75px;
+    margin: 0 10px;
+    padding: 35px 0 0 0;
+  }
+
+  @include mobile {
+    padding: 30px 0 0 0;
+    font-size: 7px;
+    height: 60px;
+    margin: 0 10px;
+  }
+
+}
+
+.ch-info p {
+  color: #fff;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 15px;
+  border-top: 1px solid rgba(255,255,255,0.5);
+  opacity: 0;
+  transition: all 1s ease-in-out 0.4s;
+
+  @include largeview {
+    
+  }
+
+  @include mediumview {
+    
+  }
+
+  @include smallview {
+    font-size: 10px;
+    margin: 12px 20%;
+    padding: 3px 0 0 0;
+    width: 60%;
+  }
+
+  @include mobile {
+    font-size: 10px;
+    margin: 12px 20%;
+    padding: 3px 0 0 0;
+    width: 60%;
+  }
+
+}
+
+.ch-info p a {
+  display: block;
+  color: rgba(255,255,255,0.7);
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding-top: 4px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  
+  @include smallview {
+    font-size: 9px;
+    margin: 0 0px;
+    padding: 5px 0 0 0;
+  }
+
+  @include mobile {
+    font-size: 9px;
+    margin: 0 0px;
+    padding: 5px 0 0 0;
+  }
+
+}
+
+.ch-info p a:hover {
+  color: rgba(255,242,34, 0.8);
+}
+
+.ch-item:hover {
+  box-shadow: 
+    inset 0 0 0 1px rgba(255,255,255,0.1),
+    0 1px 2px rgba(0,0,0,0.1);
+}
+
+.ch-item:hover .ch-info {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.ch-item:hover .ch-info p {
+  opacity: 1;
+}
+
+//
+// Front-Page Lines
+//
+
+.weights {
+  height: $weightHeight;
+  width: 100%;
+
+  @include largeview {
+    height: 60px;
+  }  
+
+  @include mediumview {
+    height: 50px;
+  }
+
+  @include smallview {
+    height: 40px;
+  }
+
+  @include mobile {
+    height: 30px;
+    margin: 0 auto;
+  }
+}
+
+.weight-line {
+}
+
+//
+// .research
+//
 
 
 .research-topic {
@@ -258,392 +823,7 @@ img {
 
 }
 
-.ch-grid {
-  height:220px;
-  margin: 0 0 0 0;
-  padding: 0;
-  list-style: none;
-  display: block;
-  text-align: center;
-  width: 800px;
 
-  @include smallview {
-    height: 140px;
-    width: 480px;
-    margin: 0 auto;
-  }
-
-  @include mobile {
-    height: 140px;
-    width: 320px;
-    margin: 0 auto;
-  }
-
-}
-
-.ch-grid:after,
-.ch-item:before {
-  content: '';
-    display: table;
-}
-
-.ch-grid:after {
-  clear: both;
-}
-
-.ch-grid li {
-  width: 220px;
-  height: 220px;
-  display: inline-block;
-  margin: 0 20px;
-
-  @include smallview {
-    margin: 0 5px;
-    width: 140px;
-    height: 140px;    
-  }
-
-  @include mobile {
-    margin: 0 5px;
-    width: 140px;
-    height: 140px;    
-  }
-
-}
-
-.ch-item {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-  cursor: default;
-  /*border: 10px solid rgba(203,111,111,1);*/
-  box-shadow: 
-    inset 0 0 0 10px rgba(0,0,0,1),
-    0 1px 2px rgba(0,0,0,0.1);
-  transition: all 0.4s ease-in-out;
-
-  @include smallview {
-  box-shadow: 
-    inset 0 0 0 5px rgba(0,0,0,1),
-    0 1px 2px rgba(0,0,0,0.1);
-  }
-
-  @include mobile {
-  box-shadow: 
-    inset 0 0 0 5px rgba(0,0,0,1),
-    0 1px 2px rgba(0,0,0,0.1);
-  }
-
-
-}
-
-.ch-img-1 { 
-  background-image: url(./images/research/brainseg.png);
-  background-size: 250px 250px;
-  font-size: 18px;
-
-  @include smallview {
-  background-image: url(./images/research/brainseg.png);
-  background-size: 150px 150px;
-  font-size: 12px;
-  }
-
-  @include mobile {
-  background-image: url(./images/research/brainseg.png);
-  background-size: 150px 150px;
-  font-size: 12px;
-  }
-
-}
-
-.ch-img-2 { 
-  background-image: url(./images/research/idh.png);
-  background-size: 250px 250px;
-  font-size: 22px;
-
-  @include smallview {
-  background-image: url(./images/research/idh.png);
-  background-size: 150px 150px;
-  font-size: 14px;
-  }
-
-  @include mobile {
-  background-image: url(./images/research/idh.png);
-  background-size: 150px 150px;
-  font-size: 14px;
-  }
-
-}
-
-.ch-img-3 { 
-  background-image: url(./images/research/retina.bmp);
-  background-size: 250px 250px;
-  font-size: 18px;
-
-  @include smallview {
-  background-image: url(./images/research/retina.bmp);
-  background-size: 150px 150px;
-  font-size: 12px;
-  }
-
-  @include mobile {
-  background-image: url(./images/research/retina.bmp);
-  background-size: 150px 150px;
-  font-size: 12px;
-  }
-
-}
-
-.ch-img-4 { 
-  background-image: url(./images/research/deepneuro_resized.png);
-  background-size: 225px 225px;
-  font-size: 22px;
-
-  @include smallview {
-  background-image: url(./images/research/deepneuro_resized.png);
-  background-size: 150px 150px;
-  font-size: 14px;
-  }
-
-  @include mobile {
-  background-image: url(./images/research/deepneuro_resized.png);
-  background-size: 150px 150px;
-  font-size: 14px;
-  }
-
-}
-
-.ch-img-5 { 
-  background-image: url(./images/research/dist_learn.jpg);
-  background-size: 250px 250px;
-  font-size: 20px;
-
-  @include smallview {
-  background-image: url(./images/research/dist_learn.jpg);
-  background-size: 150px 150px;
-  font-size: 12px;
-  }
-
-  @include mobile {
-  background-image: url(./images/research/dist_learn.jpg);
-  background-size: 150px 150px;
-  font-size: 12px;
-  }
-
-}
-
-.ch-img-6 { 
-  background-image: url(./images/research/clinical.png);
-  background-size: 250px 250px;
-  font-size: 22px;
-
-  @include smallview {
-  background-image: url(./images/research/clinical.png);
-  background-size: 150px 150px;
-  font-size: 14px;
-  }
-
-  @include mobile {
-  background-image: url(./images/research/clinical.png);
-  background-size: 150px 150px;
-  font-size: 14px;
-  }
-
-}
-
-.ch-img-7 { 
-  background-image: url(./images/research/dce.png);
-  background-size: 250px 250px;
-  font-size: 22px;
-
-  @include smallview {
-  background-image: url(./images/research/dce.png);
-  background-size: 150px 150px;
-  font-size: 14px;
-  }
-
-  @include mobile {
-  background-image: url(./images/research/dce.png);
-  background-size: 150px 150px;
-  font-size: 14px;
-  }
-
-}
-
-.ch-img-8 { 
-  background-image: url(./images/research/deepdream.png);
-  background-size: 250px 250px;
-  font-size: 22px;
-
-  @include smallview {
-  background-image: url(./images/research/deepdream.png);
-  background-size: 150px 150px;
-  font-size: 14px;
-  }
-
-  @include mobile {
-  background-image: url(./images/research/deepdream.png);
-  background-size: 150px 150px;
-  font-size: 14px;
-  }
-
-}
-
-.ch-info {
-  position: absolute;
-  background: rgba(203,111,111, 1);
-  box-shadow: 
-  inset 0 0 0 10px rgba(0,0,0,1),
-  0 1px 2px rgba(0,0,0,0.1);
-  width: inherit;
-  height: inherit;
-  border-radius: 50%;
-  overflow: hidden;
-  opacity: 0;
-  transition: all 0.4s ease-in-out;
-  transform: scale(0);
-
-  @include smallview {
-  box-shadow: 
-    inset 0 0 0 5px rgba(0,0,0,1),
-    0 1px 2px rgba(0,0,0,0.1);
-  }
-
-  @include mobile {
-  box-shadow: 
-    inset 0 0 0 5px rgba(0,0,0,1),
-    0 1px 2px rgba(0,0,0,0.1);
-  }
-
-
-}
-
-
-.ch-info-headline {
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 0 30px;
-  padding: 45px 0 0 0;
-  font-weight: bold;
-  line-height: 1.2;
-  height: 140px;
-  font-family: 'Open Sans', Arial, sans-serif;
-  text-shadow: 
-    0 0 1px #fff, 
-    0 1px 2px rgba(0,0,0,0.3);
-
-  @include smallview {
-  height: 85px;
-  margin: 0 10px;
-  padding: 35px 0 0 0;
-  }
-
-  @include mobile {
-  height: 85px;
-  margin: 0 10px;
-  padding: 35px 0 0 0;
-  }
-
-}
-
-.ch-info p {
-  color: #fff;
-  padding: 10px 5px;
-  font-style: italic;
-  margin: 0 30px;
-  font-size: 12px;
-  border-top: 1px solid rgba(255,255,255,0.5);
-  opacity: 0;
-  transition: all 1s ease-in-out 0.4s;
-
-  @include smallview {
-  font-size: 10px;
-  margin: 12px 20%;
-  padding: 3px 0 0 0;
-  width: 60%;
-  }
-
-  @include mobile {
-  font-size: 10px;
-  margin: 12px 20%;
-  padding: 3px 0 0 0;
-  width: 60%;
-  }
-
-}
-
-.ch-info p a {
-  display: block;
-  color: rgba(255,255,255,0.7);
-  font-style: normal;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 1px;
-  padding-top: 4px;
-  font-family: 'Open Sans', Arial, sans-serif;
-  
-  @include smallview {
-  font-size: 9px;
-  margin: 0 0px;
-  padding: 5px 0 0 0;
-  }
-
-  @include mobile {
-  font-size: 9px;
-  margin: 0 0px;
-  padding: 5px 0 0 0;
-  }
-
-}
-
-.ch-info p a:hover {
-  color: rgba(255,242,34, 0.8);
-}
-
-.ch-item:hover {
-  box-shadow: 
-    inset 0 0 0 1px rgba(255,255,255,0.1),
-    0 1px 2px rgba(0,0,0,0.1);
-}
-
-.ch-item:hover .ch-info {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.ch-item:hover .ch-info p {
-  opacity: 1;
-}
-
-//
-// Front-Page Lines
-//
-
-.weights {
-  height: $weightHeight;
-  width: 100%;
-
-  @include smallview {
-    width: 480px;
-    margin: 0 auto;
-  }
-
-  @include mobile {
-    width: 320px;
-    margin: 0 auto;
-  }
-}
-
-.weight-line {
-}
-
-/*********************/
-/* LAYOUT / SECTIONS */
-/*********************/
 
 //
 // .bio
@@ -699,6 +879,14 @@ img {
 }
 
 //
+// .publications
+//
+
+.img-thumbnail {
+  margin: 0;
+}
+
+//
 // .fun
 //
 
@@ -714,6 +902,7 @@ img {
 //
 
 .wrapper-masthead {
+  height: 30%;
   margin-bottom: 20px;
 }
 
@@ -761,13 +950,21 @@ img {
   letter-spacing: 1px;
   border-bottom: 1px solid $lightGray;
 
+  @include mediumview {
+    font-size: 60px;
+  }
+
+  @include smallview {
+    font-size: 40px;
+  }
+
   @include mobile {
-    font-size: 80px;
+    font-size: 30px;
   }
 }
 
 .site-name a {
-  text-decoration: none;
+  //text-decoration: none;
   color: $darkGray;
 }
 
@@ -844,16 +1041,13 @@ nav {
   }
 }
 
-.wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
-}
-
 footer {
-  padding: 20px 0;
+  height: 60%;
+  max-width: $maxWidth;
+  margin: auto;
+  padding: 10px 0px 10px 0px;
   text-align: center;
+  background-color: $lightGray;
 }
 
 // 
@@ -886,7 +1080,10 @@ footer {
 }
 
 .flex-container {
-  margin: 0;
+
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
   list-style: none;
   -ms-box-orient: horizontal;
   display: -webkit-box;
@@ -901,6 +1098,7 @@ footer {
 }
 
 .flex-image {
+  margin: 0;
   width: 200px;
   height: auto;
   max-width: none;
