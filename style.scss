@@ -896,6 +896,12 @@ img {
   text-align: center;
 }
 
+img, .fun {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
 
 //
 // .masthead
