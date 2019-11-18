@@ -246,8 +246,43 @@ img {
 // .home
 //
 
+.twitter-section {
+  width: 19%;
+  height: 700px;
+  float: left;
+  overflow: scroll;
+  //border: 1px solid;
+
+  @include largeview {
+    height: 542px;
+    font-size: 80%;
+  }
+
+  @include mediumview {
+    height: 522px;
+    font-size: 70%;
+  }
+
+  @include smallview {
+    height: 502px;
+    font-size: 50%;
+  }
+
+  @include mobile {
+    display: none;
+  }
+
+  ul {
+    margin: 0.75em 0;
+    padding: 0 1em;
+    list-style: none;
+  }
+
+}
+
+
 .neural-net {
-  width: 69%;
+  width: 59%;
   height: 100%;
   display: inline-block;
   //border: 1px solid;
@@ -259,9 +294,10 @@ img {
 }
 
 .news {
-  width: 29%;
-  height: 867px;
+  width: 19%;
+  height: 700px;
   float: right;
+  overflow: scroll;
   //border: 1px solid;
 
   @include largeview {
@@ -281,11 +317,14 @@ img {
 
   @include mobile {
     display: block;
-    height: 482px;float: right;
+    height: 482px;
+    float: right;
     font-size: 50%;
     float: none;
     margin: auto;
     width: 100%;
+
+    display: none;
   }
 
   ul {
@@ -321,7 +360,7 @@ img {
 
 
 .ch-grid {
-  height: 255px;
+  height: 200px;
   margin: 0 0 0 0;
   padding: 0;
   list-style: none;
@@ -342,7 +381,7 @@ img {
   }
 
   @include mobile {
-    height: 140px;
+    height: 100px;
     margin: 0 auto;
   }
 
@@ -401,25 +440,25 @@ img {
   cursor: default;
   //border: 10px solid rgba(203,111,111,1);
   box-shadow: 
-    inset 0 0 0 5px rgba(0,0,0,1),
+    inset 0 0 0 1px rgba(0,0,0,1),
     0 1px 2px rgba(0,0,0,0.1);
   transition: all 0.4s ease-in-out;
 
   @include mediumview {
     box-shadow: 
-      inset 0 0 0 5px rgba(0,0,0,1),
+      inset 0 0 0 1px rgba(0,0,0,1),
       0 1px 2px rgba(0,0,0,0.1);    
   }
 
   @include smallview {
     box-shadow: 
-      inset 0 0 0 5px rgba(0,0,0,1),
+      inset 0 0 0 1px rgba(0,0,0,1),
       0 1px 2px rgba(0,0,0,0.1);
   }
 
   @include mobile {
     box-shadow: 
-      inset 0 0 0 5px rgba(0,0,0,1),
+      inset 0 0 0 1px rgba(0,0,0,1),
       0 1px 2px rgba(0,0,0,0.1);
   }
 
@@ -584,7 +623,7 @@ img {
   position: absolute;
   background: rgba(203,111,111, 1);
   box-shadow: 
-  inset 0 0 0 10px rgba(0,0,0,1),
+  inset 0 0 0 3px rgba(0,0,0,1),
   0 1px 2px rgba(0,0,0,0.1);
   width: inherit;
   height: inherit;
@@ -596,13 +635,13 @@ img {
 
   @include smallview {
   box-shadow: 
-    inset 0 0 0 5px rgba(0,0,0,1),
+    inset 0 0 0 3px rgba(0,0,0,1),
     0 1px 2px rgba(0,0,0,0.1);
   }
 
   @include mobile {
   box-shadow: 
-    inset 0 0 0 5px rgba(0,0,0,1),
+    inset 0 0 0 3px rgba(0,0,0,1),
     0 1px 2px rgba(0,0,0,0.1);
   }
 
