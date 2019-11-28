@@ -130,11 +130,14 @@ permalink: /publications/
             const number = document.createElement('p')
             number.innerHTML = index+1+'.' //THIS NEEDS AUGMENTING
 
+            // if (index === 11) {debugger}
+
             // column 2 - the citation itself
             const col_citation = document.createElement('div');col_citation.setAttribute('class', 'col-11')
             const title = document.createElement('span');title.setAttribute('class', 'lead')
             const title_link = document.createElement('a');title_link.setAttribute('href','https://www.ncbi.nlm.nih.gov/pubmed/'+citation['result']['uids'][0])
-            title_link.innerHTML = citation['result'][id]['title']
+            // replace '&lt;i&gt;' and '&lt;/i&gt;' with <i> and </i>. That is what they should be but the API returns the codes instead.
+            title_link.innerHTML = citation['result'][id]['title'].replace('&lt;i&gt;','<i>').replace('&lt;/i&gt;','</i>')
 
             const authors = document.createElement('span');authors.setAttribute('class', 'lead')
             authors.innerHTML = '';
@@ -192,7 +195,8 @@ permalink: /publications/
                         col_citation.appendChild(document.createElement('br'))
                         col_citation.appendChild(document.createElement('br'))
                         col_citation.appendChild(document.createElement('br'))
-        }
+        } // end function definition for build_HTML_from_citation()
+
         // setTimeout(()=>{build_HTML_from_citation(ids[i], i)}, i*506.125)
         setTimeout(()=>{build_HTML_from_citation(ids[i], i)}, i*500)
         // Why not this???
@@ -200,7 +204,7 @@ permalink: /publications/
         // I tried it and the build_HTML_from_citation() function was being called for each loop without a delay
 
 
-    }
+    } // end for loop 
 
 
 
