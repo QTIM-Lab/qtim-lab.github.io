@@ -103,6 +103,26 @@ permalink: /people/
   </div>
 
   <div class="custom-col"> 
+    <a class="person" id="Matthew" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/default_icon_male.jpg" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Matthew Li</br>
+      Diagnostic Radiology Resident</h4>
+    </a>  
+  </div>
+
+  <div class="custom-col"> 
+    <a class="person" id="Mishka" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/default_icon_female.jpg" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Mishka Gidwani</br>
+      Graduate Student</h4>
+    </a>  
+  </div>
+
+  <div class="custom-col"> 
     <a class="person" id="Jonathan" href="#personTitle">
       <div class='image-container'>
         <img src="../images/people/jonathan_icon.jpg" class="flex-image" alt="Image"> 
@@ -368,6 +388,29 @@ permalink: /people/
 
 <script>
 
+  $("#Matthew").click(function() {
+
+   $("#imagename").attr("src", "../images/people/default_male.jpg")
+
+   $("#personTitle").html("Diagnostic Radiology Resident, MGH/Harvard Medical School");
+
+   $("#pdetails").html('Coming soon...');
+
+
+   });
+
+
+  $("#Mishka").click(function() {
+
+   $("#imagename").attr("src", "../images/people/default_female.jpg")
+
+   $("#personTitle").html("Graduate Student");
+
+   $("#pdetails").html('Coming soon...');
+
+
+   });
+
   $("#Jay").click(function() {
 
    $("#imagename").attr("src", "../images/people/jay_500.png")
@@ -377,7 +420,7 @@ permalink: /people/
    $("#pdetails").html('Jay graduated from Case Western with a degree in Biomedical Engineering. After joining the HST PhD program, he started his graduate work with Dr. Polina Golland, working on image segmentation for cardiac MRI. He later moved to QTIM to explore his interests in deep learning, specifically focused on neuroradiologic imaging. Outside of lab, he enjoys fencing, squash, and playing trivia. <a href="mailto:jbpatel@mit.edu">Email</a>.');
 
 
- });
+   });
 
   $("#Jayashree").click(function() {
 
@@ -387,7 +430,7 @@ permalink: /people/
 
    $("#pdetails").html('<p>My reasearch lies at the intersection of machine learning, statistics, informatics, image acquisition and analysis with a goal towards clinical translation. I am an electrical engineer by training, having receied a B.Tech in EE from IIT Bombay and a PhD in EE from Rensselaer Polytechnic Institute. After a number of years in the semiconductor industry, I returned to academia following a MS in Biomedical Informatics from OHSU.<br/><br/>My current projects include quantitative imaging in cancer, image analysis and decision support for retinal imaging, cloud computing, mathematical modeling of drug delivery in cancer, crowd sourcing and challenges,  algorithm development and deep learning.<br/><br/> Outside of work, I enjoy traveling with family, photography, tennis and occasionally rock climbing. <a href="mailto:kalpathy@nmr.mgh.harvard.edu">Email</a>, <a href=https://www.linkedin.com/in/jayashree-kalpathy-cramer-0ab6315/>LinkedIn</a>, <a href=https://www.nmr.mgh.harvard.edu/user/8165>Martinos Center Page</a>.</p>');
 
- });
+   });
 
   $("#Elizabeth").click(function() {
 
@@ -397,7 +440,7 @@ permalink: /people/
 
    $("#pdetails").html("<p>I am a Neuro-Oncologist with an interest in incorporating imaging techniques into clinical trials to better understand tumor biology and response to treatment. Outside of work, I enjoy traveling and spending time with my husband and twin daughters. <a href='mailto:EGERSTNER@mgh.harvard.edu'>Email</a>, <a href=https://www.nmr.mgh.harvard.edu/user/7244>Martinos Center Page</a>.");
 
- });
+   });
 
   $("#Yifen").click(function() {
 
@@ -407,7 +450,7 @@ permalink: /people/
 
    $("#pdetails").html("<p>I am an MRI physicist and my expertise is in MRI pulse sequence design and pharmacokinetic modeling. My research focus is on MR quantitation of micro-environment for brain tumor imaging. My work involves optimization of MRI pulse sequences and clinical protocols, development of imaging biomarkers for drug delivery and treatment monitoring, quantitation of cell abnormalities using MR diffusion, perfusion and spectroscopy techniques, and cross-modal comparison of MRI to PET, CT and Optical Imaging.</br></br>My second area of research interest is hyperpolarized 13C metabolic MRI. In the past few years, my work involved the design of new MRSI pulse sequences, polarized 13C-probe development and pharmacokinetic modeling of metabolic conversion. Majority of my hyperpolarized 13C research was conducted pre-clinically, on animal models of prostate cancer, brain tumors, liver cancer, cardiac disorder, renal function, and arthritis.</br></br>My early research involved the subjective experience of pain using fMRI, BOLD deactivation by cross-modal stimuli, quantitative cerebral blood flow (CBF) and cerebral blood volume (CBV) for tumor assessment, caffeine effects on BOLD and CBF, and fMRI in stroke and epilepsy patients. <a href='mailto:YYEN1@mgh.harvard.edu'>Email</a>, <a href=https://www.linkedin.com/in/yi-fen-yen-6a181224//>LinkedIn</a>, <a href=https://www.nmr.mgh.harvard.edu/user/3589446>Martinos Center Page</a>");
 
- });
+   });
 
   $("#Ina").click(function() {
 
@@ -417,7 +460,7 @@ permalink: /people/
 
    $("#pdetails").html("<p>I'm a Neuro-Oncology Fellow interested in using novel imaging techniques to study brain tumor biology, with the goal of translating these into clinical practice to help with diagnosis and clinical decision-making. Prior to joining QTIM, I completed my clinical training in Neurology at the University of Washington and in Neuro-Oncology at MGH/Dana-Farber Cancer Institute. In my free time, I enjoy traveling, running, and reading crime novels. <a href='mailto:ILY@PARTNERS.ORG'>Email</a></p>");
 
- });
+   });
 
   $("#Ken").click(function() {
 
@@ -427,7 +470,7 @@ permalink: /people/
 
    $("#pdetails").html("<p>Ken grew up in New York City and attended college at Penn. After moving to Boston, he joined QTIM to explore his interests in neurooncology, imaging informatics, and automated methods. His current projects include lesion segmentation, radiogenomics, and deep learning techniques. Outside of lab, Ken enjoys bowling, ping pong, and bike riding. <a href='mailto:kenchang@mit.edu'>Email</a>, <a href='https://www.linkedin.com/in/ken-chang-4ab12023/'>LinkedIn</a>, <a href=https://www.nmr.mgh.harvard.edu/user/3589141>Martinos Center Page</a></p>");
 
- });
+   });
 
   $("#Kathi").click(function() {
 
@@ -437,7 +480,7 @@ permalink: /people/
 
    $("#pdetails").html("<p>Kathi joined QTIM after graduating from medical school to follow my passion for research at the intersection of (radiation) oncology, radiology and computer science. Outside of the lab and school I help organizing the German American Conference at Harvard and enjoy fencing, running, and reading. <a href='mailto:khoebel@mit.edu>'>Email</a>, <a href=https://www.linkedin.com/in/katharina-hoebel-53b601154>LinkedIn</a>");
 
- });
+   });
 
 
   $("#Jonathan").click(function() {
@@ -448,7 +491,7 @@ permalink: /people/
 
    $("#pdetails").html("<p>Jonathan has a degree in Biomedical Engineering and a Masters in Bioimaging; he is interested in optimizing clinical/research protocols and pulse sequences and how they can be applied in a clinical setting. In the lab, he is in charge of scanning all of our patients, data management and pre-processing of data. Outside the lab, he enjoys spending time with family and friends and playing soccer. <a href='mailto:JCARDONA6@mgh.harvard.edu'>Email</a>, <a href=https://www.linkedin.com/in/jonathan-cardona-07943760/>LinkedIn</a>, <a href=https://www.nmr.mgh.harvard.edu/user/3653785>Martinos Center Page</a></p>");
 
- });
+   });
 
   $("#Sunakshi").click(function() {
 
@@ -457,7 +500,7 @@ permalink: /people/
    $("#personTitle").html("Research Technician, Martinos Center @ MGH");
    $("#pdetails").html("Coming soon...");
 
- });
+   });
 
 
   $("#Bruce").click(function() {
@@ -468,7 +511,7 @@ permalink: /people/
 
    $("#pdetails").html("I have over 30 years of experience developing and applying novel functional neuroimaging techniques to measure hemodynamic and metabolic changes associated with brain activation and cerebrovascular insult, as well as complementary tools to measure microvascular and microstructural morphology. The techniques I have helped to establish include functional MRI (fMRI), which was introduced by my group in the early 1990s. The many tools my group has initiated are today used by research centers and hospitals throughout the world to study and evaluate patients with stroke, brain tumors, dementia, and neurologic and psychological disorders. Most recently, my work has focused on the integration of fMRI data with information from other modalities, including positron emission tomography (PET), magnetoencephalography (MEG) and noninvasive optical imaging.");
 
- });
+   });
 
    $("#Benjamin").click(function() {
 
@@ -497,7 +540,7 @@ permalink: /people/
 
     `)
 
- });
+   });
 
    $("#Praveer").click(function() {
 
@@ -507,7 +550,7 @@ permalink: /people/
 
    $("#pdetails").html("I am a PostDoctoral Researcher working broadly in the domain of machine learning for analyzing medical data sets. Before this, I was a PhD student at Imagine Lab of Ecole des Ponts ParisTech / CNRS in the beautiful city of Paris working with some amazing office-mates. My PhD was focused upon processing high resolution images using deep learning techniques. Before that, I completed my Masters in Multimedia Technologies at Telecom ParisTech in the lovely French Riviera on a French Govt. Scholarship. During this period, I was fortunate to have interned under some brilliant researchers both at Technicolor and INRIA. I did my Bachelors in Electrical Engineering from NIT Kurukshetra during which I interned on a DAAD fellowship at TU Darmstadt and performed a short stint at IIT-Delhi.\n\nIn my free time, I love going on unplanned hikes in the nature, bike, play basketball, swim and cook (I am a big time foodie). In my past life, I have been part of a theatre group in college and I used to play Banjo for my school Orchestra.")
 
- });
+   });
 
 // THEY MIGHT BE BACK
 
@@ -519,7 +562,7 @@ permalink: /people/
 
 //    $("#pdetails").html("Coming soon...")
 
-// });
+  // });
 
 //    $("#Dania").click(function() {
 
