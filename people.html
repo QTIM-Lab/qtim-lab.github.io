@@ -115,7 +115,7 @@ permalink: /people/
   <div class="custom-col"> 
     <a class="person" id="Mishka" href="#personTitle">
       <div class='image-container'>
-        <img src="../images/people/default_icon_female.jpg" class="flex-image" alt="Image"> 
+        <img src="../images/people/mishka_icon.jpg" class="flex-image" alt="Image"> 
       </div>
       <h4>Mishka Gidwani</br>
       Graduate Student</h4>
@@ -123,12 +123,12 @@ permalink: /people/
   </div>
 
   <div class="custom-col"> 
-    <a class="person" id="Jonathan" href="#personTitle">
+    <a class="person" id="Ikbeom" href="#personTitle">
       <div class='image-container'>
-        <img src="../images/people/jonathan_icon.jpg" class="flex-image" alt="Image"> 
+        <img src="../images/people/ikbeom_icon.jpg" class="flex-image" alt="Image"> 
       </div>
-      <h4>Jonathan Cardona</br>
-      Research Technician</h4>
+      <h4>Ikbeom</br>
+      Post Doctorate</h4>
     </a>  
   </div>
 
@@ -148,7 +148,7 @@ permalink: /people/
         <img src="../images/people/benjamin_icon.png" class="flex-image" alt="Image"> 
       </div>
       <h4>Benjamin Bearce</br>
-      Programmer\Web Developer</h4>
+      Software Developer</h4>
     </a>  
   </div>
 
@@ -228,6 +228,16 @@ permalink: /people/
       <h4>James Brown</br>
       Research Fellow</h4>
     </a>
+  </div>
+
+  <div class="custom-col"> 
+    <a class="person" id="Jonathan" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/jonathan_icon.jpg" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Jonathan Cardona</br>
+      Research Technician</h4>
+    </a>  
   </div>
 
   <div class="custom-col"> 
@@ -402,14 +412,30 @@ permalink: /people/
 
   $("#Mishka").click(function() {
 
-   $("#imagename").attr("src", "../images/people/default_female.jpg")
+   $("#imagename").attr("src", "../images/people/mishka_500.jpg")
 
-   $("#personTitle").html("Graduate Student");
+   $("#personTitle").html("PhD Candidate, The Cleveland Clinic");
 
-   $("#pdetails").html('Coming soon...');
+   $("#pdetails").html('Mishka joined the lab to discover biological predictors of cancer progression and response using AI models. Outside the lab, she enjoys kayaking, reading, and wine tasting.');
 
 
    });
+
+  $("#Ikbeom").click(function() {
+
+   $("#imagename").attr("src", "../images/people/ikbeom_500.jpg")
+
+   $("#personTitle").html("Post Doctorate, Martinos @ MGH");
+
+   $("#pdetails").html(`
+    <p>Ikbeom is interested in making medical imaging smarter and artifact-free. He currently uses deep learning and image processing to identify motion artifacts in MRI.</p>
+    <p>During his PhD, he investigated white matter alterations in contact-sport athletes using MRI and developed an automated quality assurance methods for diffusion MRI using deep learning and transfer learning.</p>
+    <p>Ikbeom loves playing soccer, snowboarding, and skiing, and enjoys traveling, having been to 10 countries and 25 states in the US.</p>
+    `);
+
+
+   });
+
 
   $("#Jay").click(function() {
 
@@ -483,15 +509,15 @@ permalink: /people/
    });
 
 
-  $("#Jonathan").click(function() {
+  // $("#Jonathan").click(function() {
 
-   $("#imagename").attr("src", "../images/people/jonathan_500.png")
+  //  $("#imagename").attr("src", "../images/people/jonathan_500.png")
 
-   $("#personTitle").html("Research Technician, Martinos Center @ MGH");
+  //  $("#personTitle").html("Research Technician, Martinos Center @ MGH");
 
-   $("#pdetails").html("<p>Jonathan has a degree in Biomedical Engineering and a Masters in Bioimaging; he is interested in optimizing clinical/research protocols and pulse sequences and how they can be applied in a clinical setting. In the lab, he is in charge of scanning all of our patients, data management and pre-processing of data. Outside the lab, he enjoys spending time with family and friends and playing soccer. <a href='mailto:JCARDONA6@mgh.harvard.edu'>Email</a>, <a href=https://www.linkedin.com/in/jonathan-cardona-07943760/>LinkedIn</a>, <a href=https://www.nmr.mgh.harvard.edu/user/3653785>Martinos Center Page</a></p>");
+  //  $("#pdetails").html("<p>Jonathan has a degree in Biomedical Engineering and a Masters in Bioimaging; he is interested in optimizing clinical/research protocols and pulse sequences and how they can be applied in a clinical setting. In the lab, he is in charge of scanning all of our patients, data management and pre-processing of data. Outside the lab, he enjoys spending time with family and friends and playing soccer. <a href='mailto:JCARDONA6@mgh.harvard.edu'>Email</a>, <a href=https://www.linkedin.com/in/jonathan-cardona-07943760/>LinkedIn</a>, <a href=https://www.nmr.mgh.harvard.edu/user/3653785>Martinos Center Page</a></p>");
 
-   });
+  //  });
 
   $("#Sunakshi").click(function() {
 
@@ -546,7 +572,7 @@ permalink: /people/
 
    $("#imagename").attr("src", "../images/people/praveer_500.jpg")
 
-   $("#personTitle").html("Post Doctorate, Martinos Center @ MGH");
+   $("#personTitle").html("Deep Learning Researcher, Martinos Center @ MGH");
 
    $("#pdetails").html("I am a PostDoctoral Researcher working broadly in the domain of machine learning for analyzing medical data sets. Before this, I was a PhD student at Imagine Lab of Ecole des Ponts ParisTech / CNRS in the beautiful city of Paris working with some amazing office-mates. My PhD was focused upon processing high resolution images using deep learning techniques. Before that, I completed my Masters in Multimedia Technologies at Telecom ParisTech in the lovely French Riviera on a French Govt. Scholarship. During this period, I was fortunate to have interned under some brilliant researchers both at Technicolor and INRIA. I did my Bachelors in Electrical Engineering from NIT Kurukshetra during which I interned on a DAAD fellowship at TU Darmstadt and performed a short stint at IIT-Delhi.\n\nIn my free time, I love going on unplanned hikes in the nature, bike, play basketball, swim and cook (I am a big time foodie). In my past life, I have been part of a theatre group in college and I used to play Banjo for my school Orchestra.")
 
@@ -618,7 +644,7 @@ permalink: /people/
 
    $("#imagename").attr("src", "../images/people/nishanth_500.jpg")
 
-   $("#personTitle").html("Machine Learning Researcher, Martinos Center @ MGH");
+   $("#personTitle").html("Martinos Center @ MGH");
 
    $("#pdetails").html("Nishanth is an entering senior at Shiv Nadar University, India. Having been fascinated by algorithm design, he took up competitive programming in school and made the switch to machine learning in his junior year. His previous work includes some applications of few-shot learning, generative modelling and succesful participation in ML hackathons. His current areas of interest lie in the broad domain of deep learning for computer vision and he is exploring some applications of generative modelling on medical datasets. Outside work, he is an active musician in Delhi and plays the violin for his band. His internet search history is characterized by hours of meaningless basketball tapes, tennis highlights and poker tutorials. He also loves playing sports and is always on the lookout for a pick-up game.")
 
