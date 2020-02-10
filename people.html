@@ -153,6 +153,16 @@ permalink: /people/
   </div>
 
   <div class="custom-col"> 
+    <a class="person" id="Mehak" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/mehak_icon.jpg" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Mehak Aggarwal</br>
+      Research Fellow</h4>
+    </a>  
+  </div>
+
+  <div class="custom-col"> 
     <a class="person" id="Sharut" href="#personTitle">
       <div class='image-container'>
         <img src="../images/people/sharut_icon.jpg" class="flex-image" alt="Image"> 
@@ -631,15 +641,26 @@ permalink: /people/
 });
 
 
-$("#Sharut").click(function() {
 
-$("#imagename").attr("src", "../images/people/sharut_icon.jpg")
+  $("#Mehak").click(function() {
 
-$("#personTitle").html("Martinos Center @ MGH");
+  $("#imagename").attr("src", "../images/people/mehak_500.jpg")
 
-$("#pdetails").html("Coming soon...")
+  $("#personTitle").html("Martinos Center @ MGH");
 
-});
+  $("#pdetails").html("Coming soon...")
+
+  });
+
+  $("#Sharut").click(function() {
+
+  $("#imagename").attr("src", "../images/people/sharut_icon.jpg")
+
+  $("#personTitle").html("Martinos Center @ MGH");
+
+  $("#pdetails").html("Coming soon...")
+
+  });
 
 
 
