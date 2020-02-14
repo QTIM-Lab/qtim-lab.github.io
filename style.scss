@@ -15,16 +15,28 @@
 /**************/
 
 html {
+
   margin: auto;
   font-size: 100%;
 }
 
 body {
-  //height: 100vh;
-  height: auto;
+
+  height: 100vh;
+  margin: auto;
+  width: 100%;
+  max-width: $maxWidth;
 	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+}
+
+.main {
+  width: inherit;
+  height: auto;
+  overflow: hidden;
+  max-width: $maxWidth;
+
 }
 
 .page {
@@ -46,25 +58,29 @@ body {
 
 }
 
-.container {
-  
-  height: 60%;
-  margin: 0 auto;
-  max-width: $maxWidth;
-  padding: 0 0px;
-  
-    @include smallview {
-    padding: 0px;
+.center {
+  /*background-color: rgba(0,255,0,.2);*/
+  display: inline-block;
+  width: 60%;
+  height: auto;
+  padding: 0px;
+  float: left;
+
+  @include mobile{
+    width: 100%;
   }
 }
 
 .wideview {
-  height: 100%;
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+  /*margin: 0 auto;*/
+  max-width: $maxWidth;
   display: inherit;
-  
-  @include smallview {
-    /*display: none;*/
-  }
+  background-color: #ffffff;
+  padding-top: 1%;
+
 }
 
 .mobile-hide {
@@ -246,29 +262,85 @@ img {
 // .home
 //
 
+
+.ParallaxVideo{
+    height: 400px;
+
+    video {
+      /* 
+         When using "position: fixed;" you can no longer set width relative to parent. 
+         So we have to be explicit or use js to go find the parent width and use that to set the width.
+      */
+
+      position: fixed;
+      width: $maxWidth;
+      z-index: -1;  
+
+    }
+
+    h1 {
+
+      color: #fff;
+      font-size: 76px;
+      font-family: 'Audiowide', cursive;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0px;
+      padding: 0px;
+
+      @include largeview {
+        font-size: 50px;
+      }
+
+      @include mediumview {
+        font-size: 40px;
+      }
+
+      @include smallview {
+        font-size: 30px;
+      }
+
+
+      @include mobile {
+        font-size: 25px;
+      }
+
+    }
+
+    p {
+      font-family: 'Audiowide', cursive;
+      text-align: center;
+      color: #fff;
+    }
+
+    @include mobile {
+      font-size: 10px;
+    }
+
+}
+
+
+
+
 .twitter-section {
-  width: 19%;
-  height: 700px;
+  /*background-color: rgba(255,0,0,.2);*/
+  width: 20%;
+  height:100%;
+  max-height: 1500px;
   float: left;
   overflow: scroll;
   //border: 1px solid;
 
   @include largeview {
-    height: 542px;
+    height: 1250px;
     font-size: 80%;
   }
 
-  @include mediumview {
-    height: 522px;
-    font-size: 70%;
-  }
-
-  @include smallview {
-    height: 502px;
-    font-size: 50%;
-  }
 
   @include mobile {
+    height: 1400px;
+    font-size: 50%;
     display: none;
   }
 
@@ -280,10 +352,13 @@ img {
 
 }
 
+.home-about {
+  height: auto;
+}
 
 .neural-net {
-  width: 59%;
-  height: 100%;
+  width: 100%;
+  height: auto;
   display: inline-block;
   //border: 1px solid;
 
@@ -294,24 +369,23 @@ img {
 }
 
 .news {
-  width: 19%;
-  height: 700px;
-  float: right;
+  /*background-color: rgba(0,0,255,.2);*/
+  width: 20%;
+  height: 100%;
+  float: left;
   overflow: scroll;
   //border: 1px solid;
 
   @include largeview {
-    height: 542px;
+    height: 1250px;
     font-size: 80%;
   }
 
   @include mediumview {
-    height: 522px;
     font-size: 70%;
   }
 
   @include smallview {
-    height: 502px;
     font-size: 50%;
   }
 
@@ -357,6 +431,12 @@ img {
 }
 
 
+  .new_section {
+    background-color: rgba(0,255,0,0.1);
+    height: 250px;
+    display: block;
+    margin: none;
+  }
 
 
 .ch-grid {
@@ -947,12 +1027,42 @@ img, .fun {
 //
 
 .wrapper-masthead {
-  height: 30%;
-  margin-bottom: 20px;
+  display: block;
+  height: 100px;
+  width:100%;
+
+  @include mediumview {
+    height: 100px;
+  }
+
+  @include smallview {
+    height: 120px;
+  }
+
+  @include special_transition_for_nav_bar {
+    height: 160px;
+  }
+
+  @include miniview {
+    height: 160px;
+  }
+  
+  @include mobile {
+    height:250px;
+  }
+
+  @include microview {
+    height:320px;
+  }
+
+
+
 }
 
 .masthead {
   text-align: center;
+
+
     @include smallview {
     padding: 10px;
   }
@@ -976,12 +1086,17 @@ img, .fun {
 }
 
 .site-info {
+  /*background-color: rgba(255,0,0,.5);*/
+  width: 100%;
+  display: inline-block;
+  margin: 7% 0% 0% 0%;
 
-  float: none;
-  display: block;
-  margin: 0 auto;
+  @include miniview {
+    margin: 1% 0% 0% 0%;  
+  }
 
   @include mobile {
+    margin: 2% 0% 0% 0%;  
   }
 }
 
@@ -1046,8 +1161,8 @@ nav {
     letter-spacing: 1px;
 
     @include mobile {
+      font-size: 135%;
       margin: 0 10px;
-      color: $blue;
     }
   }
 }
@@ -1087,9 +1202,10 @@ nav {
 }
 
 footer {
-  height: 60%;
-  max-width: $maxWidth;
-  margin: auto;
+  height: 70px;
+  width: $maxWidth;
+  width: 100%;
+  margin: 0 auto;
   padding: 10px 0px 10px 0px;
   text-align: center;
   background-color: $lightGray;

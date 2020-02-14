@@ -5,7 +5,7 @@
 
 
 
-  	<!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116784872-1"></script>
   
 
@@ -17,7 +17,7 @@
 	  gtag('config', 'UA-116784872-1');
 	</script>
 
-  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
 
   {% include meta.html %}
     <!--[if lt IE 9]>
@@ -26,6 +26,8 @@
 
   <!-- BB START-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Audiowide|Monoton|Orbitron&display=swap" rel="stylesheet">
   <!-- BB END-->
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
@@ -39,14 +41,8 @@
 
   <body>
     <div class="wrapper-masthead">
-      <div class="container">
         <header class="masthead clearfix">
         <a name="Top"></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
 
           <nav>
             <a href="{{ site.baseurl }}/">Home</a>
@@ -60,18 +56,12 @@
             <a href="{{ site.baseurl }}/lunch">Lunch</a>
           </nav>
         </header>
-      </div>
     </div>
 
-    <div id="main" role="main" class="container">
+    <div id="main" role="main" class="main">
       {{ content }}
     </div>
 
-    <!-- <div class="wrapper-footer">
-      <footer class="footer">
-        {% include svg-icons.html %}
-      </footer>
-    </div> -->
 
       <footer class="footer">
         {% include svg-icons.html %}
@@ -84,6 +74,11 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- BB -->
+<script src="../js/video_paralax.js"></script>
+<!-- BB -->
+
 
   
 </html>

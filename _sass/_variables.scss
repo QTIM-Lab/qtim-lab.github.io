@@ -4,7 +4,7 @@
 //
 
 // Sizes
-$maxWidth: 1250px;//825px;
+$maxWidth: 1550px;//825px;
 $weightHeight: 50px;
 $buttonHeight: 220px;
 
@@ -26,26 +26,46 @@ $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
 // Mobile breakpoints
+
+
+@mixin microview {
+  @media screen and (max-width: 325px) {
+    @content;
+  }  
+}
+
 @mixin mobile {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 450px) {
+    @content;
+  }
+}
+
+@mixin miniview {
+  @media screen and (max-width: 631px) {
+    @content;
+  }
+}
+
+@mixin special_transition_for_nav_bar {
+  @media screen and (max-width: 799px) {
     @content;
   }
 }
 
 @mixin smallview {
-  @media screen and (max-width: 790px) {
+  @media screen and (max-width: 937px) {
     @content;
   }
 }
 
 @mixin mediumview {
-  @media screen and (max-width: 985px) {
+  @media screen and (max-width: 1243px) {
     @content;
   }
 }
 
 @mixin largeview {
-  @media screen and (max-width: 1095px) {
+  @media screen and (max-width: $maxWidth) {
     @content;
   }
 }
