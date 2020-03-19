@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Numpy: Copies vs. Views</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#000080" vlink="#0000FF" alink="#808080">
+<center>
+<a href="text0.html">First page</a> <a href="text17.html">Back</a> <a href="text19.html">Continue</a> <a href="text26.html">Last page</a> <a href="Introduction%20to%20Python.html">Overview</a> <a href="img18.html">Graphics</a></center><br>
+<h1>Numpy: Copies vs. Views</h1>
+<ul>
+<li>Views are created by slicing through an array</li>
+<ul>
+<li>This does not create a new array in memory</li>
+<li>Instead, the same memory address is shared by the original array and new sliced view</li>
+<li>Changing data on the view will change the original array!</li>
+</ul>
+<li>Use the copy function to copy an array to a completely new location in memory</li>
+</ul>
+</body>
+</html>
