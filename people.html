@@ -68,7 +68,7 @@ permalink: /people/
         <img src="../images/people/ken_icon.jpg" class="flex-image" alt="Image">
       </div>
       <h4>Ken Chang</br>
-      Graduate Student</h4>
+      MD/PhD</h4>
     </a>
   </div>
 
@@ -105,7 +105,7 @@ permalink: /people/
   <div class="custom-col"> 
     <a class="person" id="Matthew" href="#personTitle">
       <div class='image-container'>
-        <img src="../images/people/default_icon_male.jpg" class="flex-image" alt="Image"> 
+        <img src="../images/people/matthew_icon.jpg" class="flex-image" alt="Image"> 
       </div>
       <h4>Matthew Li</br>
       Diagnostic Radiology Resident</h4>
@@ -430,11 +430,18 @@ permalink: /people/
 
   $("#Matthew").click(function() {
 
-   $("#imagename").attr("src", "../images/people/default_male.jpg")
+   $("#imagename").attr("src", "../images/people/matthew_icon.jpg")
 
    $("#personTitle").html("Diagnostic Radiology Resident, MGH/Harvard Medical School");
 
-   $("#pdetails").html('Coming soon...');
+   $("#pdetails").html(`
+    <ul>
+      <li><strong>Undergrad</strong>: University of Alberta</li>
+      <li><strong>MD</strong>: Stanford University</li>
+      <li><strong>Interests</strong>: Following my co-resident @francisdeng on Twitter</li>
+    </ul>
+
+    `);
 
 
    });
