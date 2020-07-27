@@ -20,58 +20,64 @@ permalink: /publications/
 <hr>
 
 <div class="container">
-
-<!-- SAMPLE STRUCTURE OF A CITATION - for future reference -->
-<!-- <div class="row">
-        <div class="col-2">
-            <img class="img-thumbnail" src="the_magazine_blue_print.jpg" alt="citation_figure">
-        </div>
-    
-        <div class="col-10">
-            <span class="lead"><a href="">Test publication to be used for highlighted publications.</a></span>
-            <br>
-            <span class="lead">LastName F, LastName F, LastName F, LastName F, LastName F, LastName F, LastName F, LastName F, LastName F, LastName F.</span>
-            <h6>Sci Rep. YYYY MMM DD;0(0):0000. doi: 00.0000/s00000-000-00000-0.</h6>
-            <span class="text-muted">PMID: 00000000 <a href="">Free Article</a></span>
-            <br>
-            <a href="">Similar articles</a>
-        </div>
-</div> -->
-<div class="row">
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/31190077">
-              <img src="../images/publications/automatic_assessment_of_glioma_burden.png" alt="Lights" class="img-thumbnail">
-              <div class="caption">
-                <p>Automatic assessment of glioma burden: A deep learning algorithm for fully automated volumetric and bi-dimensional measurement.</p>
+    <!-- SAMPLE STRUCTURE OF A CITATION - for future reference -->
+    <!-- <div class="row">
+            <div class="col-2">
+                <img class="img-thumbnail" src="the_magazine_blue_print.jpg" alt="citation_figure">
+            </div>
+        
+            <div class="col-10">
+                <span class="lead"><a href="">Test publication to be used for highlighted publications.</a></span>
+                <br>
+                <span class="lead">LastName F, LastName F, LastName F, LastName F, LastName F, LastName F, LastName F, LastName F, LastName F, LastName F.</span>
+                <h6>Sci Rep. YYYY MMM DD;0(0):0000. doi: 00.0000/s00000-000-00000-0.</h6>
+                <span class="text-muted">PMID: 00000000 <a href="">Free Article</a></span>
+                <br>
+                <a href="">Similar articles</a>
+            </div>
+    </div> -->
+    <div class="row">
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <a href="https://pubs.rsna.org/doi/10.1148/ryai.2020200079">
+                  <img src="../images/publications/Automated_Assessment_and_Tracking_of_COVID-19_Pulmonary_Disease_Severity_on_Chest_Radiographs_using_Convolutional_Siamese_Neural_Networks.png" alt="Lights" class="img-thumbnail">
+                  <div class="caption">
+                    <p>Automated Assessment and Tracking of COVID-19 Pulmonary Disease Severity on Chest Radiographs using Convolutional Siamese Neural Networks.</p>
+                  </div>
+                </a>
               </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/29801159">
-              <img src="../images/publications/auto_diagnosis_of_plus_disease_in_retinopathy_of_prematurity.png" alt="Nature"  class="img-thumbnail">
-              <div class="caption">
-                <p>Automated Diagnosis of Plus Disease in Retinopathy of Prematurity Using Deep Convolutional Neural Networks.</p>
+            </div>
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <a href="https://www.ncbi.nlm.nih.gov/pubmed/31190077">
+                  <img src="../images/publications/automatic_assessment_of_glioma_burden.png" alt="Lights" class="img-thumbnail">
+                  <div class="caption">
+                    <p>Automatic assessment of glioma burden: A deep learning algorithm for fully automated volumetric and bi-dimensional measurement.</p>
+                  </div>
+                </a>
               </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/29617797">
-              <img src="../images/publications/distributed_deep_learning_networks_among_institutions_for_medical_imaging.png" alt="Fjords"  class="img-thumbnail">
-              <div class="caption">
-                <p>Distributed deep learning networks among institutions for medical imaging.</p>
+            </div>
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <a href="https://www.ncbi.nlm.nih.gov/pubmed/29801159">
+                  <img src="../images/publications/auto_diagnosis_of_plus_disease_in_retinopathy_of_prematurity.png" alt="Nature"  class="img-thumbnail">
+                  <div class="caption">
+                    <p>Automated Diagnosis of Plus Disease in Retinopathy of Prematurity Using Deep Convolutional Neural Networks.</p>
+                  </div>
+                </a>
               </div>
-            </a>
-          </div>
-        </div>
-      </div>
-          
-
-
+            </div>
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <a href="https://www.ncbi.nlm.nih.gov/pubmed/29617797">
+                  <img src="../images/publications/distributed_deep_learning_networks_among_institutions_for_medical_imaging.png" alt="Fjords"  class="img-thumbnail">
+                  <div class="caption">
+                    <p>Distributed deep learning networks among institutions for medical imaging.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+    </div>
 </div>
 
 <hr>
