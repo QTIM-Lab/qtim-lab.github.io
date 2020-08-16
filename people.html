@@ -143,6 +143,16 @@ permalink: /people/
   </div>
 
   <div class="custom-col"> 
+    <a class="person" id="Rakin" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/rakin_icon.jpg" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Syed Rakin Ahmed</br>
+      Graduate Student</h4>
+    </a>  
+  </div>
+
+  <div class="custom-col"> 
     <a class="person" id="Benjamin" href="#personTitle">
       <div class='image-container'>
         <img src="../images/people/benjamin_icon.png" class="flex-image" alt="Image"> 
@@ -457,6 +467,18 @@ permalink: /people/
 
 
    });
+
+    $("#Rakin").click(function() {
+
+   $("#imagename").attr("src", "../images/people/rakin_500.jpg")
+
+   $("#personTitle").html("MD-PhD Candidate, Martinos @ MGH");
+
+   $("#pdetails").html("Coming soon...");
+
+
+   });
+
 
   $("#Ikbeom").click(function() {
 
