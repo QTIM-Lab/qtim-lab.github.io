@@ -173,6 +173,27 @@ permalink: /people/
   </div>
 
   <div class="custom-col"> 
+    <a class="person" id="Charlie" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/charlie_icon.png" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Charles Lu</br>
+        Machine Learning Scientist</h4>
+    </a>  
+  </div>
+
+  <div class="custom-col"> 
+    <a class="person" id="Chris" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/default_icon_male.jpg" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Chris Bridge</br>
+        Machine Learning Scientist</h4>
+    </a>  
+  </div>
+
+
+  <div class="custom-col"> 
     <a class="person" id="Vibha" href="#personTitle">
       <div class='image-container'>
         <img src="../images/people/vibha_icon.png" class="flex-image" alt="Image"> 
@@ -221,37 +242,7 @@ permalink: /people/
       </h4>
     </a>  
   </div>
-
-  <div class="custom-col"> 
-    <a class="person" id="Witwisit" href="#personTitle">
-      <div class='image-container'>
-        <img src="../images/people/witwisit_icon.jpg" class="flex-image" alt="Image"> 
-      </div>
-      <h4>Witwisit Kantaprom</br>
-      Masters Student</h4>
-    </a>  
-  </div>
   
-  <div class="custom-col"> 
-    <a class="person" id="Bryan" href="#personTitle">
-      <div class='image-container'>
-        <img src="../images/people/bryan_icon.jpg" class="flex-image" alt="Image"> 
-      </div>
-      <h4>Bryan Chen</br>
-      Masters Student</h4>
-    </a>  
-  </div>
-
-  <div class="custom-col"> 
-    <a class="person" id="Sean" href="#personTitle">
-      <div class='image-container'>
-        <img src="../images/people/sean_icon.jpg" class="flex-image" alt="Image"> 
-      </div>
-      <h4>Sean Ko</br>
-      Masters Student</h4>
-    </a>  
-  </div>
-
   <div class="custom-col"> 
     <a class="person" id="Nishanth" href="#personTitle">
       <div class='image-container'>
@@ -279,6 +270,16 @@ permalink: /people/
 <!-- Alumni Members Begin -->
 
 <!--
+
+  <div class="custom-col"> 
+    <a class="person" id="Witwisit" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/witwisit_icon.jpg" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Witwisit Kantaprom</br>
+      Masters Student</h4>
+    </a>  
+  </div>
 
   <div class="custom-col">
     <a class="person" id="James" href="#personTitle">
@@ -380,6 +381,27 @@ permalink: /people/
     </a>  
   </div>
 
+  <div class="custom-col"> 
+    <a class="person" id="Bryan" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/bryan_icon.jpg" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Bryan Chen</br>
+      Masters Student</h4>
+    </a>  
+  </div>
+
+  <div class="custom-col"> 
+    <a class="person" id="Sean" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/sean_icon.jpg" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Sean Ko</br>
+      Masters Student</h4>
+    </a>  
+  </div>
+
+
 -->
 
 <!-- Alumni Members End -->
@@ -418,6 +440,8 @@ permalink: /people/
     <div class="custom-col"> 
       <strong>Alumni</strong>
       <ul>
+        <li><a href="https://www.linkedin.com/in/sean-ko/">Sean Ko</a></li>
+        <li><a href="https://www.linkedin.com/in/bryanchen96/">Bryan Chen</a></li>
         <li>Stephanie Salcedo</li>
         <li>Armin Thomas</li>
         <li>Kyra Donohue</li>
@@ -524,6 +548,29 @@ permalink: /people/
    $("#personTitle").html("Associate Professor, Radiology, MGH/Harvard Medical School");
 
    $("#pdetails").html('<p>My reasearch lies at the intersection of machine learning, statistics, informatics, image acquisition and analysis with a goal towards clinical translation. I am an electrical engineer by training, having receied a B.Tech in EE from IIT Bombay and a PhD in EE from Rensselaer Polytechnic Institute. After a number of years in the semiconductor industry, I returned to academia following a MS in Biomedical Informatics from OHSU.<br/><br/>My current projects include quantitative imaging in cancer, image analysis and decision support for retinal imaging, cloud computing, mathematical modeling of drug delivery in cancer, crowd sourcing and challenges,  algorithm development and deep learning.<br/><br/> Outside of work, I enjoy traveling with family, photography, tennis and occasionally rock climbing. <a href="mailto:kalpathy@nmr.mgh.harvard.edu">Email</a>, <a href=https://www.linkedin.com/in/jayashree-kalpathy-cramer-0ab6315/>LinkedIn</a>, <a href=https://www.nmr.mgh.harvard.edu/user/8165>Martinos Center Page</a>.</p>');
+
+   });
+
+
+  $("#Charlie").click(function() {
+
+   $("#imagename").attr("src", "../images/people/charlie_500.png")
+
+   $("#personTitle").html("Scientist, Martinos Center @ MGH");
+
+   $("#pdetails").html(`<p>Charlie is a machine learning scientist that focuses on deep learning techniques for medical imaging. Charlie’s favorite activity is learning sound design with analog synthesizers.</p>`);
+
+
+   });
+
+  $("#Chris").click(function() {
+
+   $("#imagename").attr("src", "../images/people/default_icon_male.jpg")
+
+   $("#personTitle").html("Scientist, Martinos Center @ MGH");
+
+   $("#pdetails").html('Coming soon...');
+
 
    });
 
@@ -729,6 +776,21 @@ permalink: /people/
 
 
 
+
+
+   $("#Nishanth").click(function() {
+
+   $("#imagename").attr("src", "../images/people/nishanth_500.png")
+
+   $("#personTitle").html("Martinos Center @ MGH");
+
+   $("#pdetails").html("Nishanth is an entering senior at Shiv Nadar University, India. Having been fascinated by algorithm design, he took up competitive programming in school and made the switch to machine learning in his junior year. His previous work includes some applications of few-shot learning, generative modelling and succesful participation in ML hackathons. His current areas of interest lie in the broad domain of deep learning for computer vision and he is exploring some applications of generative modelling on medical datasets. Outside work, he is an active musician in Delhi and plays the violin for his band. His internet search history is characterized by hours of meaningless basketball tapes, tennis highlights and poker tutorials. He also loves playing sports and is always on the lookout for a pick-up game.")
+
+});
+
+// Alumni
+
+
    $("#Sean").click(function() {
 
    $("#imagename").attr("src", "../images/people/sean_500.png")
@@ -759,18 +821,6 @@ permalink: /people/
    $("#pdetails").html("Bryan grew up in Georgia for most of his life before his family moved to New York when he went to college. He is a Master’s student at MIT studying CS and concentrating in machine learning. He joined QTIM to learn more about the problem space in healthcare and how machine learning can help solve these issues. Outside of academics, he spends most of his time doing urban dance, cooking, and eating around the area. He danced with MIT Ridonkulous and MIT Mocha Moves during his undergrad, and he worked at various restaurants during his pre-college life. He also loves dogs and traveling, and he plans to visit all 7 continents before he turns 30.")
 
 });
-
-   $("#Nishanth").click(function() {
-
-   $("#imagename").attr("src", "../images/people/nishanth_500.png")
-
-   $("#personTitle").html("Martinos Center @ MGH");
-
-   $("#pdetails").html("Nishanth is an entering senior at Shiv Nadar University, India. Having been fascinated by algorithm design, he took up competitive programming in school and made the switch to machine learning in his junior year. His previous work includes some applications of few-shot learning, generative modelling and succesful participation in ML hackathons. His current areas of interest lie in the broad domain of deep learning for computer vision and he is exploring some applications of generative modelling on medical datasets. Outside work, he is an active musician in Delhi and plays the violin for his band. His internet search history is characterized by hours of meaningless basketball tapes, tennis highlights and poker tutorials. He also loves playing sports and is always on the lookout for a pick-up game.")
-
-});
-
-// Alumni
 
  //  $("#Samarth").click(function() {
 
