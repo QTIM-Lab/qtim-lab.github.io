@@ -163,6 +163,16 @@ permalink: /people/
   </div>
 
   <div class="custom-col"> 
+    <a class="person" id="Ashwin" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/ashwin_icon.jpg" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Ashwin Waswani</br>
+      Research Intern</h4>
+    </a>  
+  </div>
+
+  <div class="custom-col"> 
     <a class="person" id="Kevin" href="#personTitle">
       <div class='image-container'>
         <img src="../images/people/kevin_icon.jpg" class="flex-image" alt="Image"> 
@@ -502,13 +512,24 @@ permalink: /people/
 
    });
 
-    $("#Rakin").click(function() {
+   $("#Rakin").click(function() {
 
    $("#imagename").attr("src", "../images/people/rakin_500.png")
 
    $("#personTitle").html("MD-PhD Candidate, Martinos @ MGH");
 
    $("#pdetails").html("Coming soon...");
+
+
+   });
+
+   $("#Ashwin").click(function() {
+
+   $("#imagename").attr("src", "../images/people/ashwin_500.jpg")
+
+   $("#personTitle").html("Research Intern, Martinos @ MGH");
+
+   $("#pdetails").html(`<p>I am a research intern currently working in the domain of Deep Learning for medical imagery. I am currently pursuing my undergraduate degree in Computer Science from Birla Institute of Technology and Sciences (BITS) Pilani. I am primarily interested in the domain of Lesion detection and Contextual Modelling in Medical Imaging. Previously, I have been fortunate to work under some brilliant researchers at the <strong>Anuradha and Prashanth Palakurthi Centre for Artificial Intelligence Research (APPCAIR)</strong>. I like to spend my free time playing and following sports such as Cricket and Football and enjoy exploring different places.</p>`);
 
 
    });
