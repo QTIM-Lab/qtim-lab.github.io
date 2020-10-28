@@ -188,17 +188,17 @@ permalink: /people/
         <img src="../images/people/charlie_icon.png" class="flex-image" alt="Image"> 
       </div>
       <h4>Charles Lu</br>
-        Machine Learning Scientist</h4>
+        Scientist</h4>
     </a>  
   </div>
 
   <div class="custom-col"> 
     <a class="person" id="Chris" href="#personTitle">
       <div class='image-container'>
-        <img src="../images/people/default_icon_male.jpg" class="flex-image" alt="Image"> 
+        <img src="../images/people/chris_icon.png" class="flex-image" alt="Image"> 
       </div>
       <h4>Chris Bridge</br>
-        Machine Learning Scientist</h4>
+        Scientist</h4>
     </a>  
   </div>
 
@@ -577,7 +577,7 @@ permalink: /people/
 
    $("#imagename").attr("src", "../images/people/charlie_500.png")
 
-   $("#personTitle").html("Scientist, Martinos Center @ MGH");
+   $("#personTitle").html("Machine Learning Scientist, Martinos Center @ MGH");
 
    $("#pdetails").html(`<p>Charlie is a machine learning scientist that focuses on deep learning techniques for medical imaging. Charlie’s favorite activity is learning sound design with analog synthesizers.</p>`);
 
@@ -586,11 +586,13 @@ permalink: /people/
 
   $("#Chris").click(function() {
 
-   $("#imagename").attr("src", "../images/people/default_icon_male.jpg")
+   $("#imagename").attr("src", "../images/people/chris_500.png")
 
-   $("#personTitle").html("Scientist, Martinos Center @ MGH");
+   $("#personTitle").html("Machine Learning Scientist, Martinos Center @ MGH");
 
-   $("#pdetails").html('Coming soon...');
+   $("#pdetails").html(`
+    <p>I work on a variety of projects developing machine-learning based image analysis algorithms for applications in clinical medicine. I am originally from England, and prior to joining QTIM I studied Engineering at the University of Cambridge, received my DPhil from the University of Oxford, and worked at the MGH & BWH Center for Clinical Data Science.</p>
+    `);
 
 
    });
