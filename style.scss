@@ -327,16 +327,29 @@ img {
   /*background-color: rgba(255,0,0,.2);*/
   width: 20%;
   height:100%;
-  max-height: 1500px;
+  max-height: 2000px;
   float: left;
   overflow: scroll;
   //border: 1px solid;
 
   @include largeview {
-    height: 1350px;
+    height: 1500px;
     font-size: 80%;
   }
 
+  @include mediumview {
+    height: 1500px;
+    font-size: 70%;
+  }
+
+  @include smallview {
+    height: 1800px;
+    font-size: 50%;
+  }
+
+  @include miniview {
+    height: 1900px;
+  }
 
   @include mobile {
     height: 1400px;
@@ -372,22 +385,28 @@ img {
   /*background-color: rgba(0,0,255,.2);*/
   width: 20%;
   height: 100%;
-  max-height: 1500px;
+  max-height: 2000px;
   float: left;
   overflow: scroll;
   //border: 1px solid;
 
   @include largeview {
-    height: 1350px;
+    height: 1500px;
     font-size: 80%;
   }
 
   @include mediumview {
+    height: 1500px;
     font-size: 70%;
   }
 
   @include smallview {
+    height: 1800px;
     font-size: 50%;
+  }
+
+  @include miniview {
+    height: 1900px;
   }
 
   @include mobile {
@@ -432,12 +451,12 @@ img {
 }
 
 
-  .new_section {
-    background-color: rgba(0,255,0,0.1);
-    height: 250px;
-    display: block;
-    margin: none;
-  }
+.new_section {
+  background-color: rgba(0,255,0,0.1);
+  height: 250px;
+  display: block;
+  margin: none;
+}
 
 
 .ch-grid {
