@@ -123,6 +123,16 @@ permalink: /people/
   </div>
 
   <div class="custom-col"> 
+    <a class="person" id="Shiyi" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/shiyi_icon.jpg" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Shiy Lui</br>
+      Programmer/Data Analyst</h4>
+    </a>  
+  </div>
+
+  <div class="custom-col"> 
     <a class="person" id="Matthew" href="#personTitle">
       <div class='image-container'>
         <img src="../images/people/matthew_icon.jpg" class="flex-image" alt="Image"> 
@@ -214,15 +224,6 @@ permalink: /people/
     </a>  
   </div>
 
-  <div class="custom-col"> 
-    <a class="person" id="Sunakshi" href="#personTitle">
-      <div class='image-container'>
-        <img src="../images/people/sunakshi_icon.jpg" class="flex-image" alt="Image"> 
-      </div>
-      <h4>Sunakshi Paul</br>
-      Research Technician</h4>
-    </a>  
-  </div>
 
   <div class="custom-col"> 
     <a class="person" id="Mehak" href="#personTitle">
@@ -281,6 +282,16 @@ permalink: /people/
 <!-- Alumni Members Begin -->
 
 <!--
+
+  <div class="custom-col"> 
+    <a class="person" id="Sunakshi" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/sunakshi_icon.jpg" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Sunakshi Paul</br>
+      Research Technician</h4>
+    </a>  
+  </div>
 
   <div class="custom-col"> 
     <a class="person" id="Witwisit" href="#personTitle">
@@ -564,6 +575,18 @@ permalink: /people/
 
    });
 
+
+   $("#Shiyi").click(function() {
+
+  $("#imagename").attr("src", "../images/people/shiyi_500.png")
+
+  $("#personTitle").html("Programmer/Data Analyst in Deep Learning");
+
+  $("#pdetails").html('Shiyi got her master’s degree in Biomedical Engineering from Columbia University. She is interested in learning new computer vision technologies and exploring their application in medical image analysis. She joined QTIM as a Data Analyst after graduation. She loves to jog with friends, unlock new recipes, and explore more unknown areas by bike.');
+
+
+  });
+
   $("#Jayashree").click(function() {
 
    $("#imagename").attr("src", "../images/people/jayashree_500.png")
@@ -647,26 +670,6 @@ permalink: /people/
    $("#personTitle").html("PhD Candidate, Harvard-MIT Division of Health Sciences and Technology");
 
    $("#pdetails").html("<p>Kathi joined QTIM after graduating from medical school to follow my passion for research at the intersection of (radiation) oncology, radiology and computer science. Outside of the lab and school I help organizing the German American Conference at Harvard and enjoy fencing, running, and reading. <a href='mailto:khoebel@mit.edu>'>Email</a>, <a href=https://www.linkedin.com/in/katharina-hoebel-53b601154>LinkedIn</a>");
-
-   });
-
-
-  // $("#Jonathan").click(function() {
-
-  //  $("#imagename").attr("src", "../images/people/jonathan_500.png")
-
-  //  $("#personTitle").html("Research Technician, Martinos Center @ MGH");
-
-  //  $("#pdetails").html("<p>Jonathan has a degree in Biomedical Engineering and a Masters in Bioimaging; he is interested in optimizing clinical/research protocols and pulse sequences and how they can be applied in a clinical setting. In the lab, he is in charge of scanning all of our patients, data management and pre-processing of data. Outside the lab, he enjoys spending time with family and friends and playing soccer. <a href='mailto:JCARDONA6@mgh.harvard.edu'>Email</a>, <a href=https://www.linkedin.com/in/jonathan-cardona-07943760/>LinkedIn</a>, <a href=https://www.nmr.mgh.harvard.edu/user/3653785>Martinos Center Page</a></p>");
-
-  //  });
-
-  $("#Sunakshi").click(function() {
-
-   $("#imagename").attr("src", "../images/people/sunakshi_icon.jpg")
-
-   $("#personTitle").html("Research Technician, Martinos Center @ MGH");
-   $("#pdetails").html("Coming soon...");
 
    });
 
@@ -847,6 +850,27 @@ permalink: /people/
    $("#pdetails").html("Bryan grew up in Georgia for most of his life before his family moved to New York when he went to college. He is a Master’s student at MIT studying CS and concentrating in machine learning. He joined QTIM to learn more about the problem space in healthcare and how machine learning can help solve these issues. Outside of academics, he spends most of his time doing urban dance, cooking, and eating around the area. He danced with MIT Ridonkulous and MIT Mocha Moves during his undergrad, and he worked at various restaurants during his pre-college life. He also loves dogs and traveling, and he plans to visit all 7 continents before he turns 30.")
 
 });
+
+
+  // $("#Jonathan").click(function() {
+
+  //  $("#imagename").attr("src", "../images/people/jonathan_500.png")
+
+  //  $("#personTitle").html("Research Technician, Martinos Center @ MGH");
+
+  //  $("#pdetails").html("<p>Jonathan has a degree in Biomedical Engineering and a Masters in Bioimaging; he is interested in optimizing clinical/research protocols and pulse sequences and how they can be applied in a clinical setting. In the lab, he is in charge of scanning all of our patients, data management and pre-processing of data. Outside the lab, he enjoys spending time with family and friends and playing soccer. <a href='mailto:JCARDONA6@mgh.harvard.edu'>Email</a>, <a href=https://www.linkedin.com/in/jonathan-cardona-07943760/>LinkedIn</a>, <a href=https://www.nmr.mgh.harvard.edu/user/3653785>Martinos Center Page</a></p>");
+
+  //  });
+
+  // $("#Sunakshi").click(function() {
+
+  //  $("#imagename").attr("src", "../images/people/sunakshi_icon.jpg")
+
+  //  $("#personTitle").html("Research Technician, Martinos Center @ MGH");
+  //  $("#pdetails").html("Coming soon...");
+
+  //  });
+
 
  //  $("#Samarth").click(function() {
 
