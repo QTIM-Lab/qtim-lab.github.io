@@ -234,6 +234,16 @@ permalink: /people/
   </div>
 
   <div class="custom-col"> 
+    <a class="person" id="Adreanne" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/adreanne_icon.jpg" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Adreanne Lemay</br>
+      Graduate Student</h4>
+    </a>  
+  </div>
+
+  <div class="custom-col"> 
     <a class="person" id="Mehak" href="#personTitle">
       <div class='image-container'>
         <img src="../images/people/mehak_icon.jpg" class="flex-image" alt="Image"> 
@@ -562,6 +572,17 @@ permalink: /people/
    $("#personTitle").html("Research Technician, Martinos @ MGH");
 
    $("#pdetails").html(`<p>Will graduated from the University of Chicago with a degree in Neuroscience. He is interested in studying the brain and brain disorders via advanced imaging techniques. Outside of lab, he enjoys baking, playing basketball, volunteering, and spending time with friends.  </p>`);
+
+
+    });
+
+    $("#Adreanne").click(function() {
+
+    $("#imagename").attr("src", "../images/people/adreanne_500.jpg")
+
+    $("#personTitle").html("Graduate Student, Martinos @ MGH");
+
+    $("#pdetails").html(`<p>I am a graduate student from Montreal passionate about developing robust AI models and methods adapted to the medical field. Apart from research, I love hiking, biking, yoga, and playing squash.</p>`);
 
 
     });
