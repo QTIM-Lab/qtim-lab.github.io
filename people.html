@@ -214,6 +214,16 @@ permalink: /people/
   </div>
 
   <div class="custom-col"> 
+    <a class="person" id="Eric" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/eric_icon.png" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Eric Yang</br>
+      Masters Student</h4>
+    </a>  
+  </div>
+
+  <div class="custom-col"> 
     <a class="person" id="Ashwin" href="#personTitle">
       <div class='image-container'>
         <img src="../images/people/ashwin_icon.jpg" class="flex-image" alt="Image"> 
@@ -550,6 +560,42 @@ permalink: /people/
    $("#personTitle").html("MD-PhD Candidate, Martinos @ MGH");
 
    $("#pdetails").html("Coming soon...");
+
+
+   });
+
+
+   $("#Eric").click(function() {
+
+   $("#imagename").attr("src", "../images/people/eric_500.png")
+
+   $("#personTitle").html("Masters student, Martinos @ MGH");
+
+   $("#pdetails").html(`
+   
+<p>Leveraging traditional and transformer-based NLP techniques for clinical text processing and classification</p>
+<ul>
+  <li>Education:
+    <ul>
+      <li>B.S. in Bioengineering at the University of Washington</li>
+      <li>Current Master of Biomedical Informatics student at Harvard Medical School</li>
+    </ul>
+  </li>
+  <li>Hobbies:
+    <ul>
+      <li>Travel, read, water activities (scuba diving, jet skiing, snorkeling, paddle boarding)</li>
+      <li>Recently been mildly obsessed with chess</li>
+    </ul>
+  </li>
+</ul>
+
+
+
+Hobbies:
+
+
+
+   `);
 
 
    });
