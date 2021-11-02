@@ -15,18 +15,16 @@
 /**************/
 
 html {
-
   margin: auto;
   font-size: 100%;
 }
 
 body {
-
   height: 100vh;
   margin: auto;
   width: 100%;
   max-width: $maxWidth;
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -36,7 +34,6 @@ body {
   height: auto;
   overflow: hidden;
   max-width: $maxWidth;
-
 }
 
 .page {
@@ -55,7 +52,6 @@ body {
   @include mobile {
     margin: 0 5%;
   }
-
 }
 
 .center {
@@ -66,9 +62,12 @@ body {
   padding: 0px;
   float: left;
 
-  @include mobile{
+  @include mobile {
     width: 100%;
   }
+}
+.iframe_container {
+  max-width: 905px;
 }
 
 .wideview {
@@ -80,13 +79,12 @@ body {
   display: inherit;
   background-color: #ffffff;
   padding-top: 1%;
-
 }
 
 .mobile-hide {
-    @include mobile {
-  display: none !important;
-}
+  @include mobile {
+    display: none !important;
+  }
 }
 
 /*
@@ -101,21 +99,24 @@ body {
   display: none;
 
   @include smallview-only {
-  display: inherit !important;
-}
-
+    display: inherit !important;
+  }
 }
 
 .mobile-only {
   display: none;
 
   @include mobile {
-  display: inherit !important;
+    display: inherit !important;
+  }
 }
 
-}
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
@@ -162,14 +163,16 @@ p {
 a {
   color: $black;
   text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
+  cursor: pointer;
+  &:hover,
+  &:active {
     color: $black;
     //text-decoration: none;
   }
 }
 
-ul, ol {
+ul,
+ol {
   margin: 15px 0;
   padding-left: 30px;
 }
@@ -182,19 +185,25 @@ ol {
   list-style-type: decimal;
 }
 
-ol ul, ul ol, ul ul, ol ol {
+ol ul,
+ul ol,
+ul ul,
+ol ol {
   margin: 0;
 }
 
-ul ul, ol ul {
+ul ul,
+ol ul {
   list-style-type: circle;
 }
 
-em, i {
+em,
+i {
   font-style: italic;
 }
 
-strong, b {
+strong,
+b {
   font-weight: bold;
 }
 
@@ -205,20 +214,17 @@ img {
   @include largeview {
     width: 90%;
     margin: 0px 30px 0px 35px;
-
   }
 
   @include mediumview {
     width: 90%;
     margin: 0px 30px 0px 35px;
-
   }
 
   @include mobile {
     height: 200px;
     margin: 0px 15px 0px 15px;
   }
-
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -245,14 +251,13 @@ img {
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
-
 
 /*********************/
 /* LAYOUT / SECTIONS */
@@ -262,77 +267,68 @@ img {
 // .home
 //
 
+.ParallaxVideo {
+  height: 200px;
 
-.ParallaxVideo{
-    height: 200px;
-
-    video {
-      /* 
+  video {
+    /* 
          When using "position: fixed;" you can no longer set width relative to parent. 
          So we have to be explicit or use js to go find the parent width and use that to set the width.
       */
 
-      position: fixed;
-      width: $maxWidth;
-      z-index: -1;  
+    position: fixed;
+    width: $maxWidth;
+    z-index: -1;
+  }
 
+  h1 {
+    color: #fff;
+    font-size: 76px;
+
+    // First font customization that we chose. Find import in default.html towards top, commented out
+    // font-family: 'Audiowide', cursive;
+
+    // New font /*6/30/2021*/
+    font-family: "Roboto Mono", monospace;
+
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+
+    @include largeview {
+      font-size: 50px;
     }
 
-    h1 {
-
-      color: #fff;
-      font-size: 76px;
-
-      // First font customization that we chose. Find import in default.html towards top, commented out
-      // font-family: 'Audiowide', cursive;
-      
-      // New font /*6/30/2021*/
-      font-family: 'Roboto Mono', monospace;
-
-      font-weight: 700;
-      text-align: center;
-      text-transform: uppercase;
-      margin: 0px;
-      padding: 0px;
-
-      @include largeview {
-        font-size: 50px;
-      }
-
-      @include mediumview {
-        font-size: 40px;
-      }
-
-      @include smallview {
-        font-size: 30px;
-      }
-
-
-      @include mobile {
-        font-size: 25px;
-      }
-
+    @include mediumview {
+      font-size: 40px;
     }
 
-    p {
-      font-family: 'Audiowide', cursive;
-      text-align: center;
-      color: #fff;
+    @include smallview {
+      font-size: 30px;
     }
 
     @include mobile {
-      font-size: 10px;
+      font-size: 25px;
     }
+  }
 
+  p {
+    font-family: "Audiowide", cursive;
+    text-align: center;
+    color: #fff;
+  }
+
+  @include mobile {
+    font-size: 10px;
+  }
 }
-
-
-
 
 .twitter-section {
   /*background-color: rgba(255,0,0,.2);*/
   width: 20%;
-  height:100%;
+  height: 100%;
   max-height: 2000px;
   float: left;
   overflow: scroll;
@@ -368,7 +364,6 @@ img {
     padding: 0 1em;
     list-style: none;
   }
-
 }
 
 .home-about {
@@ -433,7 +428,7 @@ img {
     list-style: none;
   }
 
-  li:before { 
+  li:before {
     content: "";
     border-color: transparent #111;
     border-style: solid;
@@ -448,22 +443,19 @@ img {
 
   a {
     text-decoration: underline;
-   }
+  }
   .date {
     font-weight: bold;
     font-style: normal;
   }
-
 }
 
-
 .new_section {
-  background-color: rgba(0,255,0,0.1);
+  background-color: rgba(0, 255, 0, 0.1);
   height: 250px;
   display: block;
   margin: none;
 }
-
 
 .ch-grid {
   height: 200px;
@@ -476,7 +468,7 @@ img {
 
   @include largeview {
     height: 140px;
-  }  
+  }
 
   @include mediumview {
     height: 140px;
@@ -490,13 +482,12 @@ img {
     height: 100px;
     margin: 0 auto;
   }
-
 }
 
 .ch-grid:after,
 .ch-item:before {
-  content: '';
-    display: table;
+  content: "";
+  display: table;
 }
 
 .ch-grid:after {
@@ -508,24 +499,23 @@ img {
   //height: 220px;
   width: 26%;
   height: 100%;
-  
+
   display: inline-block;
   margin: 0 3%;
 
   @include largeview {
-     
   }
 
   @include mediumview {
     height: 100%;
     width: 26%;
-    margin: 0 3%; 
+    margin: 0 3%;
   }
 
   @include smallview {
     width: 30%;
     margin: 0 1%;
-    height: 100%;   
+    height: 100%;
   }
 
   @include mobile {
@@ -533,7 +523,6 @@ img {
     margin: 0 4%;
     height: 100%;
   }
-
 }
 
 .ch-item {
@@ -545,39 +534,27 @@ img {
 
   cursor: default;
   //border: 10px solid rgba(203,111,111,1);
-  box-shadow: 
-    inset 0 0 0 1px rgba(0,0,0,1),
-    0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 1), 0 1px 2px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease-in-out;
 
   @include mediumview {
-    box-shadow: 
-      inset 0 0 0 1px rgba(0,0,0,1),
-      0 1px 2px rgba(0,0,0,0.1);    
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 1), 0 1px 2px rgba(0, 0, 0, 0.1);
   }
 
   @include smallview {
-    box-shadow: 
-      inset 0 0 0 1px rgba(0,0,0,1),
-      0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 1), 0 1px 2px rgba(0, 0, 0, 0.1);
   }
 
   @include mobile {
-    box-shadow: 
-      inset 0 0 0 1px rgba(0,0,0,1),
-      0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 1), 0 1px 2px rgba(0, 0, 0, 0.1);
   }
-
-
 }
 
-.ch-img-1 { 
+.ch-img-1 {
   background-image: url(./images/research/brainseg.png);
   background-size: 250px 250px;
   font-size: 18px;
 
-
-
   @include smallview {
     background-image: url(./images/research/brainseg.png);
     background-size: 150px 150px;
@@ -589,10 +566,9 @@ img {
     background-size: 150px 150px;
     font-size: 12px;
   }
-
 }
 
-.ch-img-2 { 
+.ch-img-2 {
   background-image: url(./images/research/idh.png);
   background-size: 250px 250px;
   font-size: 22px;
@@ -608,10 +584,9 @@ img {
     background-size: 150px 150px;
     font-size: 14px;
   }
-
 }
 
-.ch-img-3 { 
+.ch-img-3 {
   background-image: url(./images/research/retina.bmp);
   background-size: 250px 250px;
   font-size: 18px;
@@ -627,10 +602,9 @@ img {
     background-size: 150px 150px;
     font-size: 12px;
   }
-
 }
 
-.ch-img-4 { 
+.ch-img-4 {
   background-image: url(./images/research/deepneuro_resized.png);
   background-size: 225px 225px;
   font-size: 22px;
@@ -646,10 +620,9 @@ img {
     background-size: 150px 150px;
     font-size: 14px;
   }
-
 }
 
-.ch-img-5 { 
+.ch-img-5 {
   background-image: url(./images/research/dist_learn.jpg);
   background-size: 250px 250px;
   font-size: 20px;
@@ -665,10 +638,9 @@ img {
     background-size: 150px 150px;
     font-size: 12px;
   }
-
 }
 
-.ch-img-6 { 
+.ch-img-6 {
   background-image: url(./images/research/clinical.png);
   background-size: 250px 250px;
   font-size: 22px;
@@ -684,10 +656,9 @@ img {
     background-size: 150px 150px;
     font-size: 14px;
   }
-
 }
 
-.ch-img-7 { 
+.ch-img-7 {
   background-image: url(./images/research/dce.png);
   background-size: 250px 250px;
   font-size: 22px;
@@ -703,10 +674,9 @@ img {
     background-size: 150px 150px;
     font-size: 14px;
   }
-
 }
 
-.ch-img-8 { 
+.ch-img-8 {
   background-image: url(./images/research/deepdream.png);
   background-size: 250px 250px;
   font-size: 22px;
@@ -722,15 +692,12 @@ img {
     background-size: 150px 150px;
     font-size: 14px;
   }
-
 }
 
 .ch-info {
   position: absolute;
-  background: rgba(203,111,111, 1);
-  box-shadow: 
-  inset 0 0 0 3px rgba(0,0,0,1),
-  0 1px 2px rgba(0,0,0,0.1);
+  background: rgba(203, 111, 111, 1);
+  box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 1), 0 1px 2px rgba(0, 0, 0, 0.1);
   width: inherit;
   height: inherit;
   border-radius: 50%;
@@ -740,20 +707,13 @@ img {
   transform: scale(0);
 
   @include smallview {
-  box-shadow: 
-    inset 0 0 0 3px rgba(0,0,0,1),
-    0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 1), 0 1px 2px rgba(0, 0, 0, 0.1);
   }
 
   @include mobile {
-  box-shadow: 
-    inset 0 0 0 3px rgba(0,0,0,1),
-    0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 1), 0 1px 2px rgba(0, 0, 0, 0.1);
   }
-
-
 }
-
 
 .ch-info-headline {
   color: #fff;
@@ -764,10 +724,8 @@ img {
   font-weight: bold;
   line-height: 1.2;
   height: 140px;
-  font-family: 'Open Sans', Arial, sans-serif;
-  text-shadow: 
-    0 0 1px #fff, 
-    0 1px 2px rgba(0,0,0,0.3);
+  font-family: "Open Sans", Arial, sans-serif;
+  text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0, 0, 0, 0.3);
 
   font-size: 16px;
 
@@ -780,7 +738,6 @@ img {
   @include mediumview {
     font-size: 11px;
   }
-
 
   @include smallview {
     font-size: 8px;
@@ -795,7 +752,6 @@ img {
     height: 60px;
     margin: 0 10px;
   }
-
 }
 
 .ch-info p {
@@ -804,16 +760,14 @@ img {
   font-style: italic;
   margin: 0 30px;
   font-size: 15px;
-  border-top: 1px solid rgba(255,255,255,0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
   opacity: 0;
   transition: all 1s ease-in-out 0.4s;
 
   @include largeview {
-    
   }
 
   @include mediumview {
-    
   }
 
   @include smallview {
@@ -829,20 +783,19 @@ img {
     padding: 3px 0 0 0;
     width: 60%;
   }
-
 }
 
 .ch-info p a {
   display: block;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1px;
   padding-top: 4px;
-  font-family: 'Open Sans', Arial, sans-serif;
-  
+  font-family: "Open Sans", Arial, sans-serif;
+
   @include smallview {
     font-size: 9px;
     margin: 0 0px;
@@ -854,17 +807,15 @@ img {
     margin: 0 0px;
     padding: 5px 0 0 0;
   }
-
 }
 
 .ch-info p a:hover {
-  color: rgba(255,242,34, 0.8);
+  color: rgba(255, 242, 34, 0.8);
 }
 
 .ch-item:hover {
-  box-shadow: 
-    inset 0 0 0 1px rgba(255,255,255,0.1),
-    0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .ch-item:hover .ch-info {
@@ -886,7 +837,7 @@ img {
 
   @include largeview {
     height: 60px;
-  }  
+  }
 
   @include mediumview {
     height: 50px;
@@ -909,7 +860,6 @@ img {
 // .research
 //
 
-
 .research-topic {
   min-height: 300px;
   width: 90%;
@@ -921,8 +871,7 @@ img {
   text-align: center;
 }
 
-.research-bubble-wrapper{
-
+.research-bubble-wrapper {
   @include smallview {
     height: 250px;
     width: 100%;
@@ -932,7 +881,6 @@ img {
     height: 250px;
     width: 100%;
   }
-
 }
 
 .research-bubble {
@@ -942,33 +890,23 @@ img {
   border-radius: 50%;
   overflow: hidden;
   margin: 0 40px 0 0;
-  box-shadow: 
-    inset 0 0 0 10px rgba(0,0,0,1),
-    0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 1), 0 1px 2px rgba(0, 0, 0, 0.1);
 
   @include smallview {
     float: none;
     margin: 0 auto;
-  box-shadow: 
-    inset 0 0 0 5px rgba(0,0,0,1),
-    0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 1), 0 1px 2px rgba(0, 0, 0, 0.1);
   }
 
   @include mobile {
     float: none;
     margin: 0 auto;
-  box-shadow: 
-    inset 0 0 0 5px rgba(0,0,0,1),
-    0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 1), 0 1px 2px rgba(0, 0, 0, 0.1);
   }
-
 }
 
 .research-text {
-
 }
-
-
 
 //
 // .bio
@@ -982,7 +920,6 @@ img {
 }
 
 .bio-directory {
-
   width: 100%;
 
   @include smallview {
@@ -996,11 +933,9 @@ img {
   height: auto;
 }
 
-
-
 .bio h1 {
   margin: 16px 20px;
-  font-weight: 300;  
+  font-weight: 300;
   text-align: center;
 }
 
@@ -1017,7 +952,7 @@ img {
   font-size: 14px;
   margin-bottom: 0px;
 
-    @include mobile {
+  @include mobile {
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -1041,12 +976,12 @@ img {
   text-align: center;
 }
 
-img, .fun {
+img,
+.fun {
   display: block;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
 }
-
 
 //
 // .masthead
@@ -1055,7 +990,7 @@ img, .fun {
 .wrapper-masthead {
   display: block;
   height: 100px;
-  width:100%;
+  width: 100%;
 
   @include mediumview {
     height: 100px;
@@ -1072,24 +1007,20 @@ img, .fun {
   @include miniview {
     height: 160px;
   }
-  
+
   @include mobile {
-    height:250px;
+    height: 250px;
   }
 
   @include microview {
-    height:320px;
+    height: 320px;
   }
-
-
-
 }
 
 .masthead {
   text-align: center;
 
-
-    @include smallview {
+  @include smallview {
     padding: 10px;
   }
 }
@@ -1118,11 +1049,11 @@ img, .fun {
   margin: 7% 0% 0% 0%;
 
   @include miniview {
-    margin: 1% 0% 0% 0%;  
+    margin: 1% 0% 0% 0%;
   }
 
   @include mobile {
-    margin: 2% 0% 0% 0%;  
+    margin: 2% 0% 0% 0%;
   }
 }
 
@@ -1209,7 +1140,7 @@ nav {
 
 .post {
   blockquote {
-    margin: 1.8em .8em;
+    margin: 1.8em 0.8em;
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
@@ -1237,13 +1168,13 @@ footer {
   background-color: $lightGray;
 }
 
-// 
+//
 // people
 //
 
 .detailsDiv {
- margin-top: 30px;
- border-style: groove;
+  margin-top: 30px;
+  border-style: groove;
 }
 
 .detailsDiv img {
@@ -1252,7 +1183,7 @@ footer {
 }
 
 .col-6 col-md-4 custom-col {
- padding: 1em;
+  padding: 1em;
 }
 
 .custom-col {
@@ -1267,7 +1198,6 @@ footer {
 }
 
 .flex-container {
-
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -1290,15 +1220,15 @@ footer {
   height: auto;
   max-width: none;
   opacity: 1;
-  transition: opacity .1s ease-out;
-  -moz-transition: opacity .1s ease-out;
-  -webkit-transition: opacity .1s ease-out;
-  -o-transition: opacity .1s ease-out;
+  transition: opacity 0.1s ease-out;
+  -moz-transition: opacity 0.1s ease-out;
+  -webkit-transition: opacity 0.1s ease-out;
+  -o-transition: opacity 0.1s ease-out;
   overflow: hidden;
 }
 
 .flex-image:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .image-container {
