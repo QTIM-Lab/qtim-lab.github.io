@@ -143,6 +143,16 @@ permalink: /people/
   </div>
 
   <div class="custom-col"> 
+    <a class="person" id="Albert" href="#personTitle">
+      <div class='image-container'>
+        <img src="../images/people/albert_icon.jpg" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Albert Kim</br>
+        Physician Investigator</h4>
+    </a>  
+  </div>
+
+  <div class="custom-col"> 
     <a class="person" id="Charlie" href="#personTitle">
       <div class='image-container'>
         <img src="../images/people/charlie_icon.png" class="flex-image" alt="Image"> 
@@ -554,7 +564,7 @@ permalink: /people/
    });
 
 
-  $("#Mishka").click(function() {
+   $("#Mishka").click(function() {
 
    $("#imagename").attr("src", "../images/people/mishka_500.png")
 
@@ -562,6 +572,16 @@ permalink: /people/
 
    $("#pdetails").html('Mishka joined the lab to discover biological predictors of cancer progression and response using AI models. Outside the lab, she enjoys kayaking, reading, and wine tasting.');
 
+
+   });
+
+   $("#Albert").click(function() {
+
+   $("#imagename").attr("src", "../images/people/albert_500.jpg")
+
+   $("#personTitle").html("Physician Investigator");
+
+   $("#pdetails").html('I am a neuro-oncologist with clinical and research interests in central nervous system metastases.  My laboratory efforts leverage Omics-based techniques, medical imaging, and machine learning to define and target genomic and metabolic vulnerabilities for these tumors.  My hope is that these findings will result in newer and smarter ways to treat these difficult diseases and ultimately inspire precision-based paradigms for these patients.');
 
    });
 
