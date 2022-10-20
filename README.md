@@ -10,3 +10,15 @@ Our lab focuses on developing quantitative imaging biomarkers for cancer and oth
 <br />
 
 Read about our lab members on the <a href="{{ site.baseurl }}/people"/>People</a> tab. Learn more about our specific research topics on the <a href="{{ site.baseurl }}/research">Research</a> tab. See our recent publications on the <a href="{{ site.baseurl }}/publications">Publications</a> tab, job openings on the <a href="{{ site.baseurl }}/jobs">Jobs</a> tab, and find a way to get in touch on the <a href="{{ site.baseurl }}/contact">Contact</a> tab. Last but not least, check the <a href="{{ site.baseurl }}/fun">Fun</a> tab to see some pictures of our lab members doing what we do best.
+
+## Developers Note:
+```bash
+# Make sure you have ruby and jekyll installed:
+https://jekyllrb.com/docs/installation/ubuntu/
+
+# Install gems:
+bundle install
+
+# Serve the website:
+bundle exec jekyll serve
+```
