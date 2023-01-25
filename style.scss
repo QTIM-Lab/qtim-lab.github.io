@@ -1231,13 +1231,13 @@ footer {
   opacity: 0.7;
 }
 
-.image-container {
-  border-style: solid;
-  border-width: 5px;
-  border-color: black;
-  overflow: hidden;
-  height: 200px;
-}
+// .image-container {
+//   border-style: solid;
+//   border-width: 5px;
+//   border-color: black;
+//   overflow: hidden;
+//   height: 200px;
+// }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

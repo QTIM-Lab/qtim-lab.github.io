@@ -13,3 +13,27 @@ h2 {
 .site-info > p {
   font-size: 30px;
 }
+
+.image-container {
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  overflow: hidden;
+  height: 200px;
+}
+
+.image-container-mgb {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #0098A7;
+  overflow: hidden;
+  height: 200px;
+}
+
+.image-container-cudenver {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #D0B97C;
+  overflow: hidden;
+  height: 200px;
+}
