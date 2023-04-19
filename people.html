@@ -191,6 +191,16 @@ permalink: /people/
     </a>  
   </div>
 
+  <div class="custom-col"> 
+    <a class="person" id="Satvik" href="#personTitle">
+      <div class='image-container-mgb'>
+        <img src="../images/people/satvik_icon.png" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Satvik Tripathi<br>
+      Research Student</h4>
+    </a>  
+  </div>
+
 
 <!-- MIGHT BE HERE SOON -->
 
@@ -744,6 +754,14 @@ permalink: /people/
     $("#personTitle").html("Programmer Analyst");
     $("#pdetails").html(`
     <p>Coming soon...</p>
+    `);
+  });
+
+  $("#Satvik").click(function() {
+    $("#imagename").attr("src", "../images/people/satvik_500.png")
+    $("#personTitle").html("Research Student");
+    $("#pdetails").html(`
+    <p>Satvik is a visiting research student at the Division of Vascular and Interventional Radiology at MGH. He is working on a joint appointment with the QTIM and PIMI lab at the Martnios Center. His work focuses on developing advanced deep learning pipelines for radiology to solve clinically relevant problems. Outside of lab and hospital, he takes performing humor and hiking very seriously.</p>
     `);
   });
 
