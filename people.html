@@ -221,6 +221,16 @@ permalink: /people/
     </a>  
   </div>
 
+  <div class="custom-col"> 
+    <a class="person" id="Giacomo" href="#personTitle">
+      <div class='image-container-cudenver'>
+        <img src="../images/people/giacomo_icon.jpg" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Giacomo Nebbia<br>
+      Data Scientist</h4>
+    </a>  
+  </div>
+
 <!-- MIGHT BE HERE SOON -->
 
 <!--   <div class="custom-col"> 
@@ -794,9 +804,17 @@ permalink: /people/
 
   $("#Scott").click(function() {
     $("#imagename").attr("src", "../images/people/scott_500.jpg")
-    $("#personTitle").html("Ophthalmology resident");
+    $("#personTitle").html("Data Scientist");
     $("#pdetails").html(`
     <p>Born and raised in Colorado. I enjoy helping people, learning about machines, and helping machines learn to help people.</p>
+    `);
+  });
+
+  $("#Giacomo").click(function() {
+    $("#imagename").attr("src", "../images/people/giacomo_500.jpg")
+    $("#personTitle").html("Data Scientist");
+    $("#pdetails").html(`
+    <p>My name is Giacomo Nebbia, and I received my PhD from the Intelligent Systems Program at the University of Pittsburgh in 2023. My research focuses on computer vision applied to medical imaging. My areas of expertise include multi-modal object detection and cancer classification/detection from mammography and Digital Breast Tomosynthesis. My work has been published in ICMR (best paper award 2023), CVPRW, and MICCAI, among others.</p>
     `);
   });
 
