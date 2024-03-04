@@ -211,6 +211,15 @@ permalink: /people/
     </a>  
   </div>
 
+  <div class="custom-col"> 
+    <a class="person" id="Randy" href="#personTitle">
+      <div class='image-container-cudenver'>
+        <img src="../images/people/scott_icon.jpg" class="flex-image" alt="Image"> 
+      </div>
+      <h4>Scott Kinder<br>
+      Data Scientist</h4>
+    </a>  
+  </div>
 
 <!-- MIGHT BE HERE SOON -->
 
@@ -777,10 +786,17 @@ permalink: /people/
 
   $("#Randy").click(function() {
     $("#imagename").attr("src", "../images/people/randy_500.png")
-    // $("#imagename").attr("src", "../images/people/satvik_500.png")
     $("#personTitle").html("Ophthalmology resident");
     $("#pdetails").html(`
     <p>My name is Randy, I’m currently an ophthalmology resident at the University of Colorado. I grew up in Bellevue, Washington and received my BS and MD degrees both from the University of Washington. Prior to starting residency, I completed a research year where I worked on applying machine learning to problems within the field of ophthalmology. In my free time, I like to spend time with my wife and our dog, Joey. I also like to go skiing, golfing, traveling, and exploring new restaurants.</p>
+    `);
+  });
+
+  $("#Scott").click(function() {
+    $("#imagename").attr("src", "../images/people/scott_500.jpg")
+    $("#personTitle").html("Ophthalmology resident");
+    $("#pdetails").html(`
+    <p>Born and raised in Colorado. I enjoy helping people, learning about machines, and helping machines learn to help people.</p>
     `);
   });
 
